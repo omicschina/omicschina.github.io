@@ -79,7 +79,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Omics China" />
+  <meta name="keywords" content="Omics, China" />
 
 
 
@@ -197,7 +197,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -207,7 +207,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            Über
+            About
           </a>
         </li>
       
@@ -227,7 +227,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            Kategorien
+            Categories
           </a>
         </li>
       
@@ -237,7 +237,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -303,7 +303,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-14T20:29:33+08:00">
                 2017-09-14
@@ -324,7 +324,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">in</span>
+                <span class="post-meta-item-text">In</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -377,65 +377,14 @@
 
       
         
-          
-            <p>参考了一篇<a href="https://github.com/limedroid/HexoLearning#42-直接方式" target="_blank" rel="external">非常好的文章</a>，然后结合自己的实际问题，讲解如何使用github结合hexo建立个人的独立博客。</p>
-<h2 id="1-Hexo介绍"><a href="#1-Hexo介绍" class="headerlink" title="1. Hexo介绍"></a>1. Hexo介绍</h2><p><a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo</a>是基于NodeJs的静态博客框架，简单、轻量，其生成的静态网页可以托管在Github和Heroku上。</p>
-<p>. 超快速度<br>. 支持MarkDown<br>. 一键部署<br>. 丰富的插件</p>
-<p>下面以我的博客为例，<a href="https://shenxt.github.io/" target="_blank" rel="external">shenxt.github.io</a>为例，讲解如何部署自己的博客。</p>
-<h2 id="2-环境准备"><a href="#2-环境准备" class="headerlink" title="2. 环境准备"></a>2. 环境准备</h2><h3 id="2-1-安装node-js"><a href="#2-1-安装node-js" class="headerlink" title="2.1 安装node.js"></a>2.1 安装node.js</h3><p>去<a href="https://nodejs.org/en/download/" target="_blank" rel="external">nodejs</a>官网下载对应系统的安装包，按提示安装。</p>
-<p>检验安装成功，在git shell中输入一下代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ node -v</div></pre></td></tr></table></figure>
-<h3 id="2-2-安装hexo"><a href="#2-2-安装hexo" class="headerlink" title="2.2 安装hexo"></a>2.2 安装hexo</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-cli -g</div></pre></td></tr></table></figure>
-<p>如果是mac，则需要输入：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo npm install hexo-cli -g</div></pre></td></tr></table></figure>
-<h2 id="3-利用Hexo搭建一个博客"><a href="#3-利用Hexo搭建一个博客" class="headerlink" title="3. 利用Hexo搭建一个博客"></a>3. 利用Hexo搭建一个博客</h2><h3 id="3-1-创建博客目录shenxt-github-io"><a href="#3-1-创建博客目录shenxt-github-io" class="headerlink" title="3.1 创建博客目录shenxt@github.io"></a>3.1 创建博客目录shenxt@github.io</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo init shenxt.github.io</div><div class="line">$ cd limedroid.github.io</div><div class="line">$ npm install</div></pre></td></tr></table></figure>
-<h3 id="3-2-生成静态页面"><a href="#3-2-生成静态页面" class="headerlink" title="3.2 生成静态页面"></a>3.2 生成静态页面</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo clean</div><div class="line">$ hexo g # g is generate</div></pre></td></tr></table></figure>
-<h3 id="3-3-运行"><a href="#3-3-运行" class="headerlink" title="3.3 运行"></a>3.3 运行</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo s -p3600# is server</div></pre></td></tr></table></figure>
-<p>然后可以打开浏览器，输入地址 localhost:3600 即可看到效果。</p>
-<h2 id="4-发一篇文章试试"><a href="#4-发一篇文章试试" class="headerlink" title="4 发一篇文章试试"></a>4 发一篇文章试试</h2><h3 id="4-1-穿件一个新的博客"><a href="#4-1-穿件一个新的博客" class="headerlink" title="4.1 穿件一个新的博客"></a>4.1 穿件一个新的博客</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new test</div></pre></td></tr></table></figure>
-<p>此时会在source/posts目录下生成test.md文件，输入一些内容，然后保存。</p>
-<p>然后看一下效果:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo clean</div><div class="line">$ hexo g</div><div class="line">$ hexo s -p3600# is server</div></pre></td></tr></table></figure>
-<p>然后可以打开浏览器，输入地址 localhost:3600 即可看到效果。</p>
-<h2 id="5-配置"><a href="#5-配置" class="headerlink" title="5 配置"></a>5 配置</h2><p>网站的设置大部分都在_config.yml文件夹中，详细配置可以查看<a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="external">官方文档</a>。</p>
-<p>下面只列出简单常用配置:</p>
-<p>.title -&gt; 网站标题<br>.subtitle -&gt; 网站副标题<br>.description -&gt; 网站描述<br>.author -&gt; 您的名字<br>.language -&gt; 网站使用的语言</p>
-<p>注意：进行配置时，需要在冒号:后加一个英文空格。</p>
-<h2 id="6-更换主题"><a href="#6-更换主题" class="headerlink" title="6 更换主题"></a>6 更换主题</h2><p>在网站配置文件_config.yml中，配置theme。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">theme: next</div></pre></td></tr></table></figure>
-<p>next是主题的名字。Hexo有不同的人贡献主题，可以到其<a href="https://hexo.io/themes/index.html" target="_blank" rel="external">官方网站</a>上下载不同主题。看中某一主题之后，直接点击其名字，进入到其github界面，然后复制其网址，使用下面代码，即可下载主题到本地。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/fi3ework/hexo-theme-archer</div></pre></td></tr></table></figure>
-<p>然后将博客的配置文件theme修改为archer即可。</p>
-<p>观察效果：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo clean</div><div class="line">$ hexo g</div><div class="line">$ hexo s -p3600# is server</div></pre></td></tr></table></figure>
-<h2 id="7-部署到github上"><a href="#7-部署到github上" class="headerlink" title="7 部署到github上"></a>7 部署到github上</h2><h3 id="7-1-在github网页版上创建和自己账户名相同的仓库，比如我的账户为shenxt，因此，创建的仓库为shenxt-github-io。"><a href="#7-1-在github网页版上创建和自己账户名相同的仓库，比如我的账户为shenxt，因此，创建的仓库为shenxt-github-io。" class="headerlink" title="7.1 在github网页版上创建和自己账户名相同的仓库，比如我的账户为shenxt，因此，创建的仓库为shenxt.github.io。"></a>7.1 在github网页版上创建和自己账户名相同的仓库，比如我的账户为shenxt，因此，创建的仓库为shenxt.github.io。</h3><h3 id="7-2-安装hexo-deployer-git"><a href="#7-2-安装hexo-deployer-git" class="headerlink" title="7.2 安装hexo-deployer-git"></a>7.2 安装hexo-deployer-git</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
-<h3 id="7-3-网站配置git"><a href="#7-3-网站配置git" class="headerlink" title="7.3 网站配置git"></a>7.3 网站配置git</h3><p>在网上的配置文件_config.yml中配置deploy。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">type: git</div><div class="line">repo: https://github.com/shenxt/shenxt.github.io</div><div class="line">branch: master</div></pre></td></tr></table></figure>
-<h3 id="7-4-部署"><a href="#7-4-部署" class="headerlink" title="7.4 部署"></a>7.4 部署</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo d# d is deploy</div></pre></td></tr></table></figure>
-<h2 id="贴标签，方便搜索"><a href="#贴标签，方便搜索" class="headerlink" title="贴标签，方便搜索"></a>贴标签，方便搜索</h2><h3 id="8-1-两个确认"><a href="#8-1-两个确认" class="headerlink" title="8.1 两个确认"></a>8.1 两个确认</h3><p>. 首先确认博客的配置文件中有：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tag_dir: tags</div></pre></td></tr></table></figure>
-<p>. 然后确认主题的配置文件有：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tags: tags</div></pre></td></tr></table></figure>
-<h3 id="8-2-新建tags页面"><a href="#8-2-新建tags页面" class="headerlink" title="8.2 新建tags页面"></a>8.2 新建tags页面</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new page tags</div></pre></td></tr></table></figure>
-<p>此时会在source/下生成tags/index.md文件。</p>
-<h3 id="8-3-修改source-tags-index-md"><a href="#8-3-修改source-tags-index-md" class="headerlink" title="8.3 修改source/tags/index.md"></a>8.3 修改source/tags/index.md</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">title: tags</div><div class="line">date: 2015-10-20 06:49:50</div><div class="line">type: &quot;tags&quot;</div><div class="line">comments: false</div></pre></td></tr></table></figure>
-<h3 id="8-4-在文章中添加tags"><a href="#8-4-在文章中添加tags" class="headerlink" title="8.4 在文章中添加tags"></a>8.4 在文章中添加tags</h3><p>在你的文章中添加：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">tags:</div><div class="line">	- Tag1</div><div class="line">	- Tag2</div><div class="line">	- Tag3</div></pre></td></tr></table></figure>
-<p>其文件头部类似于：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">title: TagEditText</div><div class="line">date: 2016-11-19 10:44:25</div><div class="line">tags:</div><div class="line">	- Tag1</div><div class="line">	- Tag2</div><div class="line">	- Tag3</div></pre></td></tr></table></figure>
-<h2 id="9-分类，给文章归档"><a href="#9-分类，给文章归档" class="headerlink" title="9 分类，给文章归档"></a>9 分类，给文章归档</h2><h3 id="9-1-两个确认"><a href="#9-1-两个确认" class="headerlink" title="9.1 两个确认"></a>9.1 两个确认</h3><p>. 确认博客配置文件打开了</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">category_dir: categories</div></pre></td></tr></table></figure>
-<p>. 确认主题配置文件打开了</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">categories: /categories</div></pre></td></tr></table></figure>
-<h3 id="9-2-新建categories文件"><a href="#9-2-新建categories文件" class="headerlink" title="9.2 新建categories文件"></a>9.2 新建categories文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new page categories</div></pre></td></tr></table></figure>
-<h3 id="9-3-修改categories-index-md"><a href="#9-3-修改categories-index-md" class="headerlink" title="9.3 修改categories/index.md"></a>9.3 修改categories/index.md</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">title: categories</div><div class="line">date: 2015-10-20 06:49:50</div><div class="line">type: &quot;categories&quot;</div><div class="line">comments: false</div></pre></td></tr></table></figure>
-<h3 id="9-4-在文章中添加categories"><a href="#9-4-在文章中添加categories" class="headerlink" title="9.4 在文章中添加categories"></a>9.4 在文章中添加categories</h3><p>在文章中添加：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">categories:</div><div class="line">	- cate</div></pre></td></tr></table></figure>
-<p>其文件头部类似：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">title: TagEditText</div><div class="line">date: 2016-11-19 10:44:25</div><div class="line">categories:</div><div class="line">	- cate</div></pre></td></tr></table></figure>
-<h2 id="10-添加评论功能"><a href="#10-添加评论功能" class="headerlink" title="10 添加评论功能"></a>10 添加评论功能</h2><p>这里推荐使用韩国的来必力系统。参考<a href="https://www.drixn.com/2017/LiveReCommentsSystem/" target="_blank" rel="external">这个博客</a>进行设置。</p>
-
-          
+          参考了一篇[非常好的文章](https://github.com/limedroid/HexoLearning#42-直接方式)，然后结合自己的实际问题，讲解如何使用github结合hexo建立个人的独立博客。[Hexo](https://hexo.io/zh-cn/)是基于NodeJs的静态博客框架，简单、轻量，其生成的静态网页可以托管在Github和Heroku上。
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/09/14/2017-09-09-github-blog/">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -511,7 +460,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-14T20:29:33+08:00">
                 2017-09-14
@@ -563,508 +512,14 @@
 
       
         
-          
-            <h2 id="R语言爬虫"><a href="#R语言爬虫" class="headerlink" title="R语言爬虫"></a><strong>R语言爬虫</strong></h2><hr>
-<p>虽然相对于python来说，R语言爬虫并不是那么流行，但是对于比较小的数据爬取量，使用R还是很方便的。R的数据爬取比较流行的是利用XML和RCurl包进行爬取，在这篇博客里面，我就利用XML和RCurl包进行KEGG和HMDB的数据爬取。</p>
-<h2 id="爬取KEGG通路信息"><a href="#爬取KEGG通路信息" class="headerlink" title="爬取KEGG通路信息"></a><strong>爬取KEGG通路信息</strong></h2><hr>
-<p>因为我需要的信息是KEGG的通路信息，比较简单，也就是每个通路包含哪些代谢物，只要人的metaboloic pathway，因此，我需要先将KEGG中的通路的网页链接拿到。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div></pre></td><td class="code"><pre><div class="line">library(XML)</div><div class="line">library(RCurl)</div><div class="line">##从kegg主页上抓取代谢通路的url</div><div class="line">URL = getURL(&quot;http://www.genome.jp/kegg/pathway.html#global&quot;)</div><div class="line">doc &lt;- htmlParse(URL,encoding=&quot;utf-8&quot;)</div><div class="line">xpath.a &lt;- &quot;//a/@href&quot;</div><div class="line">node &lt;- getNodeSet(doc, xpath.a)</div><div class="line">url1 &lt;- sapply(node, as.character)</div><div class="line"></div><div class="line">xpath.b &lt;- &quot;//a[@href]&quot;</div><div class="line">name &lt;- getNodeSet(doc, xpath.b)</div><div class="line">name &lt;- sapply(name, xmlValue)</div><div class="line"></div><div class="line">name2 &lt;- name[59:247]</div><div class="line">url2 &lt;- url1[59:247]</div><div class="line"></div><div class="line">url3 &lt;- url2[grep(&quot;show&quot;, url2)]</div><div class="line"></div><div class="line">pathwat.name &lt;- NULL</div><div class="line">metabolite.id &lt;- list()</div><div class="line">metabolite.name &lt;- list()</div><div class="line">for (i in 1:length(url3)) &#123;</div><div class="line">  cat(paste(i,&quot;/&quot;,length(url3)))</div><div class="line">  cat(&quot;\n&quot;)</div><div class="line">  URL &lt;- paste(&quot;http://www.genome.jp&quot;, url3[i], sep = &quot;&quot;)</div><div class="line">  URL = getURL(URL)</div><div class="line">  doc&lt;-htmlParse(URL,encoding=&quot;utf-8&quot;)</div><div class="line">  xpath &lt;- &quot;//option[@value=&apos;hsa&apos;]&quot;</div><div class="line">  node&lt;-getNodeSet(doc, xpath)</div><div class="line">  if (length(node) ==0 ) &#123;</div><div class="line">    cat(&quot;No human pathwat.&quot;)</div><div class="line">    next()</div><div class="line">  &#125;else&#123;</div><div class="line">    URL &lt;- paste(&quot;http://www.genome.jp&quot;, url3[i], sep = &quot;&quot;)</div><div class="line">    URL &lt;- gsub(pattern = &quot;map=map&quot;, replacement = &quot;map=hsa&quot;, x = URL)</div><div class="line">    doc&lt;-htmlParse(URL,encoding=&quot;utf-8&quot;)</div><div class="line">    xpath1 &lt;- &quot;//title&quot;</div><div class="line">    node&lt;-getNodeSet(doc, xpath1)</div><div class="line">    pathway.name[i] &lt;- xmlValue(node[[1]])</div><div class="line">    pathway.name[i] &lt;- substr(pathway.name[i], start = 2, stop = nchar(pathway.name[i])-1)</div><div class="line"></div><div class="line">    xpath2 &lt;- &quot;//area[@shape=&apos;circle&apos;]/@title&quot;</div><div class="line">    node&lt;-getNodeSet(doc, xpath2)</div><div class="line">    metabolite &lt;- lapply(node, function(x) as.character(x))</div><div class="line">    metabolite.name[[i]] &lt;- substr(metabolite, start = 9, nchar(metabolite)-1)</div><div class="line">    metabolite.id[[i]] &lt;- substr(metabolite, start = 1, stop = 6)</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>下面对爬取到的代谢通路进行筛选。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">idx &lt;- which(!is.na(pathway.name))</div><div class="line">pathway.name1 &lt;- pathway.name[idx]</div><div class="line">metabolite.id1 &lt;- metabolite.id[idx]</div><div class="line">metabolite.name1 &lt;- metabolite.name[idx]</div><div class="line"></div><div class="line">pathway.name2 &lt;- pathway.name1[-c(83,84)]</div><div class="line">metabolite.id2 &lt;- metabolite.id1[-c(83,84)]</div><div class="line">metabolite.name2 &lt;- metabolite.name1[-c(83,84)]</div></pre></td></tr></table></figure>
-<p>将爬取到的信息保存输出。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">met.name &lt;- NULL</div><div class="line">met.id &lt;- NULL</div><div class="line">path.name &lt;- NULL</div><div class="line">for(i in 1:length(pathway.name2)) &#123;</div><div class="line">  met.name[i] &lt;- paste(metabolite.name2[[i]], collapse = &quot;;&quot;)</div><div class="line">  met.id[i] &lt;- paste(metabolite.id2[[i]], collapse = &quot;;&quot;)</div><div class="line">  path.name[i] &lt;- gsub(pattern = &quot;KEGG PATHWAY: &quot;, &quot;&quot;, pathway.name2[i])</div><div class="line">  path.name[i] &lt;- substr(path.name[i], start = 1, stop = nchar(path.name[i])-23)</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">kegg &lt;- data.frame(path.name, met.name, met.id)</div><div class="line">write.csv(kegg, &quot;kegg.csv&quot;, row.names = F)</div><div class="line"></div><div class="line">save(path.name, file = &quot;path.name&quot;)</div><div class="line">save(met.name, file = &quot;met.name&quot;)</div><div class="line">save(met.id, file = &quot;met.id&quot;)</div><div class="line"></div><div class="line">kegg.met &lt;- list()</div><div class="line">kegg.met[[2]] &lt;- sapply(path.name, list)</div><div class="line">kegg.met[[1]] &lt;- metabolite.name2</div><div class="line">kegg.met[[3]] &lt;- metabolite.id2</div><div class="line"></div><div class="line">names(kegg.met) &lt;- c(&quot;gs&quot;, &quot;pathwaynames&quot;, &quot;metid&quot;)</div><div class="line"></div><div class="line">save(kegg.met, file = &quot;kegg.met&quot;)</div></pre></td></tr></table></figure>
-<h2 id="爬取HMDB通路信息"><a href="#爬取HMDB通路信息" class="headerlink" title="爬取HMDB通路信息"></a><strong>爬取HMDB通路信息</strong></h2><hr>
-<p>首先爬取HMDB的通路信息。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div></pre></td><td class="code"><pre><div class="line">##抓取HMDB通路信息</div><div class="line">library(XML)</div><div class="line">library(RCurl)</div><div class="line"></div><div class="line">hmdb.main &lt;- &quot;http://www.hmdb.ca/pathways?page=&quot;</div><div class="line">hmdb.main &lt;- paste(hmdb.main, c(2:46), sep = &quot;&quot;)</div><div class="line">hmdb.main &lt;- c(&quot;http://www.hmdb.ca/pathways&quot;, hmdb.main)</div><div class="line"></div><div class="line">##从HMDB主页上抓取代谢通路的url</div><div class="line">path.name &lt;- list()</div><div class="line">metabolite.id &lt;- list()</div><div class="line">spec &lt;- list()</div><div class="line">path.class &lt;- list()</div><div class="line">for (i in 40:length(hmdb.main)) &#123;</div><div class="line">  cat(paste(&quot;page&quot;,i))</div><div class="line">  cat(&quot;:&quot;)</div><div class="line">  URL = getURL(hmdb.main[i])</div><div class="line">  doc&lt;-htmlParse(URL,encoding=&quot;utf-8&quot;)</div><div class="line">  xpath1 &lt;- &quot;//div[@class=&apos;panel-heading&apos;]&quot;</div><div class="line">  node1 &lt;- getNodeSet(doc, xpath1)</div><div class="line">  pathway.name &lt;- sapply(node1, xmlValue)</div><div class="line"></div><div class="line">  cat(paste(length(pathway.name), &quot;pathways&quot;))</div><div class="line">  cat(&quot;\n&quot;)</div><div class="line"></div><div class="line">  path.name[[i]] &lt;- pathway.name</div><div class="line"></div><div class="line">  xpath2 &lt;- &quot;//div[@class=&apos;panel-body&apos;]&quot;</div><div class="line">  node2 &lt;- getNodeSet(doc, xpath2)</div><div class="line"></div><div class="line">  metabolite &lt;- sapply(node2, xmlValue)</div><div class="line">  metabolite &lt;- unname(sapply(metabolite, function(x) &#123;gsub(&quot;Show&quot;, &quot; &quot;, x)&#125;))</div><div class="line"></div><div class="line">  idx &lt;- sapply(metabolite, function(x) &#123;gregexpr(&quot;HMDB[0-9]&#123;5&#125;&quot;, x)&#125;)</div><div class="line"></div><div class="line">  met.id &lt;- list()</div><div class="line">  for (j in 1:length(idx)) &#123;</div><div class="line">    id &lt;- NULL</div><div class="line">    for (k in 1:length(idx[[j]])) &#123;</div><div class="line">      id[k] &lt;- substr(metabolite[j], idx[[j]][k], idx[[j]][k]+8)</div><div class="line">    &#125;</div><div class="line">    met.id[[j]] &lt;- id</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  metabolite.id[[i]] &lt;- met.id</div><div class="line"></div><div class="line">  xpath.a &lt;- &quot;//a[@class=&apos;link-out&apos;]/@href&quot;</div><div class="line">  node&lt;-getNodeSet(doc, xpath.a)</div><div class="line"></div><div class="line">  url1 &lt;- sapply(node, as.character)</div><div class="line">  url1 &lt;- substr(url1, start = 1, stop = 29)</div><div class="line">  url1 &lt;- url1[!duplicated(url1)]</div><div class="line"></div><div class="line"></div><div class="line">  ###获取通路的人种和类别</div><div class="line">  species &lt;- NULL</div><div class="line">  metabolic &lt;- NULL</div><div class="line">  for (t in 1:length(url1)) &#123;</div><div class="line">    cat(paste(&quot;t:&quot;,t));cat(&quot; &quot;)</div><div class="line">    URL = getURL(url1[t])</div><div class="line">    doc &lt;- htmlParse(URL,encoding=&quot;utf-8&quot;)</div><div class="line">    xpath &lt;- &quot;//div[@class=&apos;species&apos;]/text()&quot;</div><div class="line">    node &lt;- getNodeSet(doc, xpath)</div><div class="line">    species[t] &lt;- xmlValue(node[[1]])</div><div class="line"></div><div class="line">    xpath &lt;- &quot;//div[@id=&apos;des_subject&apos;]/text()&quot;</div><div class="line">    node &lt;- getNodeSet(doc, xpath)</div><div class="line">    metabolic[t] &lt;- xmlValue(node[[1]])</div><div class="line"></div><div class="line">  &#125;</div><div class="line"></div><div class="line">  spec[[i]] &lt;- species</div><div class="line">  path.class[[i]] &lt;- metabolic</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>对爬取到的代谢通路进行筛选。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div></pre></td><td class="code"><pre><div class="line">save(path.name, file = &quot;path.name&quot;)</div><div class="line">save(metabolite.id, file = &quot;metabolite.id&quot;)</div><div class="line">save(spec, file = &quot;spec&quot;)</div><div class="line">save(path.class, file = &quot;path.class&quot;)</div><div class="line"></div><div class="line"></div><div class="line">pathway.name &lt;- NULL</div><div class="line">metabolite.ID &lt;- list()</div><div class="line">species &lt;- NULL</div><div class="line">pathway.class &lt;- NULL</div><div class="line">for (i in 1:length(path.name)) &#123;</div><div class="line">  pathway.name &lt;- c(pathway.name, path.name[[i]])</div><div class="line">  metabolite.ID &lt;- c(metabolite.ID, metabolite.id[[i]])</div><div class="line">  species &lt;- c(species, spec[[i]])</div><div class="line">  pathway.class &lt;- c(pathway.class, path.class[[i]])</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">pathway.class &lt;- substr(x = pathway.class, 1, regexpr(&quot;\\\n&quot;, pathway.class)-1)</div><div class="line"></div><div class="line">metabolite.name &lt;- list()</div><div class="line">for (i in 1:length(metabolite.ID)) &#123;</div><div class="line">  id &lt;- metabolite.ID[[i]]</div><div class="line">  idx &lt;- match(id, hmdbdatabase[,1])</div><div class="line">  name &lt;- hmdbdatabase[idx,2]</div><div class="line">  metabolite.name[[i]] &lt;- name</div><div class="line">&#125;</div><div class="line"></div><div class="line">a &lt;- unlist(lapply(metabolite.name, function(x) &#123;paste(x, collapse = &quot;;&quot;)&#125;))</div><div class="line">b &lt;- unlist(lapply(metabolite.ID, function(x) &#123;paste(x, collapse = &quot;;&quot;)&#125;))</div><div class="line"></div><div class="line">idx &lt;- grep(&quot;Metabolic&quot;, pathway.class)</div><div class="line"></div><div class="line">metabolite.name &lt;- metabolite.name[idx]</div><div class="line">metabolite.ID &lt;- metabolite.ID[idx]</div><div class="line">pathway.name &lt;- pathway.name[idx]</div><div class="line">pathway.class &lt;- pathway.class[idx]</div><div class="line">species &lt;- species[idx]</div><div class="line"></div><div class="line">hmdb.pathway &lt;- data.frame(pathway.name, pathway.class,a, b)[idx,]</div><div class="line">write.csv(hmdb.pathway, &quot;hmdb.pathway.csv&quot;)</div><div class="line"></div><div class="line">a &lt;- list()</div><div class="line">for (i in 1:length(pathway.name)) &#123;</div><div class="line">  a[[i]] &lt;- pathway.name[i]</div><div class="line">&#125;</div><div class="line"></div><div class="line">pathway.name &lt;- a</div><div class="line"></div><div class="line">hmdb.met &lt;- list(gs = metabolite.name, pathwaynames = pathway.name, id = metabolite.ID)</div><div class="line">save(hmdb.met, file = &quot;hmdb.met&quot;)</div></pre></td></tr></table></figure>
-<h2 id="爬取HMDB代谢物信息"><a href="#爬取HMDB代谢物信息" class="headerlink" title="爬取HMDB代谢物信息"></a><strong>爬取HMDB代谢物信息</strong></h2><hr>
-<p>首先，获得所有代谢物的页面链接。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">###抓取HMDB代谢物信息</div><div class="line">library(XML)</div><div class="line">library(RCurl)</div><div class="line"></div><div class="line">hmdb.main &lt;- &quot;http://www.hmdb.ca/metabolites?c=hmdb_id&amp;d=up&amp;page=&quot;</div><div class="line">hmdb.main &lt;- paste(hmdb.main, c(2:1681), sep = &quot;&quot;)</div><div class="line">hmdb.main &lt;- c(&quot;http://www.hmdb.ca/metabolites&quot;, hmdb.main)</div><div class="line"></div><div class="line">##从HMDB主页上抓取代谢物的url</div><div class="line">url &lt;- NULL</div><div class="line">for (i in 1:length(hmdb.main)) &#123;</div><div class="line">  cat(i)</div><div class="line">  cat(&quot; &quot;)</div><div class="line">  URL = getURL(hmdb.main[i])</div><div class="line">  doc&lt;-htmlParse(URL,encoding=&quot;utf-8&quot;)</div><div class="line">  xpath &lt;- &quot;//a[@href]/@href&quot;</div><div class="line">  node&lt;-getNodeSet(doc, xpath)</div><div class="line">  url1 &lt;- sapply(node, as.character)</div><div class="line">  url1 &lt;- url1[grep(&quot;metabolites/HMDB&quot;, url1)]</div><div class="line">  url1 &lt;- unique(url1)</div><div class="line">  url &lt;- c(url, url1)</div><div class="line">&#125;</div><div class="line"></div><div class="line">url1 &lt;- paste(&quot;http://www.hmdb.ca/&quot;,url, sep = &quot;&quot;)</div><div class="line">save(url1, file = &quot;url1&quot;)</div></pre></td></tr></table></figure>
-<p>下面开始进行代谢物信息爬取。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div></pre></td><td class="code"><pre><div class="line">library(mailR)</div><div class="line">for (i in 1:400) &#123;</div><div class="line">  cat(paste((i-1)*100+1,&quot;-&quot;,i*100,&quot;/&quot;, length(url1), sep = &quot;&quot;))</div><div class="line">  cat(&quot;\n&quot;)</div><div class="line">  URL &lt;- getURL(url1[((i-1)*100+1):(i*100)])</div><div class="line">  doc &lt;- htmlParse(URL, encoding=&quot;utf-8&quot;)</div><div class="line">  xpath1 &lt;- &quot;//tr&quot;</div><div class="line">  node1 &lt;- getNodeSet(doc, xpath1)</div><div class="line">  node1 &lt;- sapply(node1, xmlValue)</div><div class="line"></div><div class="line">  HMDB_ID[((i-1)*100+1):(i*100)] &lt;-</div><div class="line">    gsub(pattern = &quot;HMDB ID&quot;, replacement = &quot;&quot;,node1[grep(&quot;HMDB ID&quot;, node1)])</div><div class="line"></div><div class="line">  Common_Name[((i-1)*100+1):(i*100)] &lt;-</div><div class="line">    gsub(&quot;Common Name&quot;, &quot;&quot;,node1[grep(&quot;Common Name&quot;, node1)])</div><div class="line"></div><div class="line">  temp &lt;- gsub(&quot;SynonymsValueSource&quot;, &quot;&quot;,node1[grep(&quot;Synonyms&quot;, node1)])</div><div class="line">  temp &lt;- gsub(&quot;Generator&quot;, &quot;;&quot;,temp)</div><div class="line">  temp &lt;- gsub(&quot;ChEMBL&quot;, &quot;;&quot;,temp)</div><div class="line">  temp &lt;- gsub(&quot;ChEBI&quot;, &quot;;&quot;,temp)</div><div class="line">  Synonyms[((i-1)*100+1):(i*100)] &lt;-</div><div class="line">    gsub(&quot;HMDB&quot;, &quot;;&quot;,temp)</div><div class="line"></div><div class="line">  Chemical_Formula[((i-1)*100+1):(i*100)] &lt;-</div><div class="line">    gsub(&quot;Chemical Formula&quot;, &quot;&quot;,node1[grep(&quot;Chemical Formula&quot;, node1)])</div><div class="line"></div><div class="line">  Monoisotopic_Molecular_Weight[((i-1)*100+1):(i*100)] &lt;-</div><div class="line">    gsub(&quot;Monoisotopic Molecular Weight&quot;, &quot;&quot;,node1[grep(&quot;Monoisotopic Molecular Weight&quot;, node1)])</div><div class="line"></div><div class="line">  IUPAC_Name[((i-1)*100+1):(i*100)] &lt;-</div><div class="line">    gsub(&quot;IUPAC Name&quot;, &quot;&quot;,node1[grep(&quot;IUPAC Name&quot;, node1)])</div><div class="line"></div><div class="line">  Traditional_Name[((i-1)*100+1):(i*100)] &lt;-</div><div class="line">    gsub(&quot;Traditional Name&quot;, &quot;&quot;,node1[grep(&quot;Traditional Name&quot;, node1)])</div><div class="line"></div><div class="line">  CAS_Registry_Number[((i-1)*100+1):(i*100)] &lt;-</div><div class="line">    gsub(&quot;CAS Registry Number&quot;, &quot;&quot;,node1[grep(&quot;CAS Registry Number&quot;, node1)])</div><div class="line"></div><div class="line">  Origin[((i-1)*100+1):(i*100)] &lt;-</div><div class="line">    gsub(&quot;Origin&quot;, &quot;&quot;,node1[grep(&quot;Origin&quot;, node1)])</div><div class="line"></div><div class="line">  path &lt;- gsub(&quot;PathwaysNameSMPDB LinkKEGG Link&quot;, &quot;&quot;,node1[grep(&quot;Pathways&quot;, node1)])</div><div class="line">  Pathways[((i-1)*100+1):(i*100)] &lt;-</div><div class="line">    substr(path, 1, stop = regexpr(&quot;SMP&quot;, path)-1)</div><div class="line"></div><div class="line">  ##每100次保存一次</div><div class="line">  if (i*100 %in% seq(100, 60000, by = 100)) &#123;</div><div class="line">    cat(&quot;save data...\n&quot;)</div><div class="line">    save(HMDB_ID,</div><div class="line">         Common_Name,</div><div class="line">         Synonyms,</div><div class="line">         Chemical_Formula,</div><div class="line">         Monoisotopic_Molecular_Weight,</div><div class="line">         IUPAC_Name,</div><div class="line">         Traditional_Name,</div><div class="line">         CAS_Registry_Number,</div><div class="line">         Origin,</div><div class="line">         Pathways,</div><div class="line">         file = paste(&quot;hmdb.data&quot;,i*100))</div><div class="line"></div><div class="line">    send.mail(from = &quot;yourmail1@163.com&quot;,</div><div class="line">              to = c(&quot;youmail20@163.com&quot;),</div><div class="line">              subject = paste(&quot;WZZ GO ON:&quot;, i),</div><div class="line">              body = paste(&quot;WZZ still go on&quot;, i),</div><div class="line">              smtp = list(host.name = &quot;smtp.163.com&quot;, port = 465, user.name = &quot;yourmail1&quot;, passwd = &quot;passward&quot;, ssl = TRUE),</div><div class="line">              authenticate = TRUE,</div><div class="line">              send = TRUE)</div><div class="line">  &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>因为代谢物信息比较大，可能需要一晚上，因此想到了没爬取100个，就给自己发一封邮件，来对程序进行监控。</p>
-<p>写的比较粗糙，有时间再好好修改一下。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://shenxt.me/2017/09/14/2016-11-25-metcleaning/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Japser Shen">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Omics China">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/09/14/2016-11-25-metcleaning/" itemprop="url">MetCleaning instruction</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-14T20:29:33+08:00">
-                2017-09-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/09/14/2016-11-25-metcleaning/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/09/14/2016-11-25-metcleaning/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a><strong>Introduction</strong></h2><hr>
-<p><em>MetCleaning</em> provides an integrated and automatic pipeline for data cleaning and statistical analysis of large scale mass spectrometry (MS) based-metabolomic data. It includes missing value (MV) filtering and imputation, zero value filtering, data normalization, data integration, data quality assessment, univariate statistical analysis, multivariate statistical analysis such as PCA and PLS-DA, potential marker selection and show. This document describes how to use the integrated functions, <em>MetClean</em> and <em>MetStat</em> in <em>MetCleaning</em> utilizing demo data.</p>
-<p><img src="/images/metcleaning/workflow for instruction.jpg" alt="Figure1 Workflow of *MetCleaning*"></p>
-<h2 id="Installation-and-help"><a href="#Installation-and-help" class="headerlink" title="Installation and help"></a><strong>Installation and help</strong></h2><hr>
-<p><em>MetCleaning</em> is published in github <a href="https://github.com/jaspershen/MetCleaning" target="_blank" rel="external">(link)</a>. So you can install it via to github.</p>
-<p>code 1: Installation of <em>MetCleaning</em></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">##pcaMethods and impute should be installed form bioconductor</div><div class="line">##pcaMethos</div><div class="line">source(&quot;http://bioconductor.org/biocLite.R&quot;)</div><div class="line">    biocLite(&quot;pcaMethods&quot;)</div><div class="line">##impute</div><div class="line">source(&quot;http://bioconductor.org/biocLite.R&quot;)</div><div class="line">    biocLite(&quot;impute&quot;)</div><div class="line"> if(!require(devtools)) &#123;</div><div class="line">  install.packages(&quot;devtools&quot;)</div><div class="line"> &#125;</div><div class="line"> library(devtools)</div><div class="line"> install_github(&quot;jaspershen/MetCleaning&quot;)</div><div class="line"> library(MetCleaning)</div><div class="line"> help(package = &quot;MetCleaning&quot;)</div></pre></td></tr></table></figure>
-<h2 id="Data-cleaning"><a href="#Data-cleaning" class="headerlink" title="Data cleaning"></a><strong>Data cleaning</strong></h2><hr>
-<p>Data cleaning is integrated as a function named as <em>MetClean</em> in <em>MetCleaning</em>. We use the demo data as the example. Copy the code below and paste in you R console.</p>
-<p>code 2: Demo data of <em>MetClean</em></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">##demo data</div><div class="line">data(data, package = &quot;MetCleaning&quot;)</div><div class="line">data(sample.information, package = &quot;MetCleaning&quot;)</div><div class="line">##demo work directory</div><div class="line">dir.create(&quot;Demo for MetCleaning&quot;)</div><div class="line">setwd(&quot;Demo for MetCleaning&quot;)</div><div class="line">##write files</div><div class="line">write.csv(data, &quot;data.csv&quot;, row.names = FALSE)</div><div class="line">write.csv(sample.information , &quot;sample.information.csv&quot;, row.names = FALSE)</div></pre></td></tr></table></figure>
-<p>The demo data have been added in your work directory and organized in you work directory as Figure 2 shows. It contains two files, “data.csv” and “sample.information.csv”.</p>
-<ol>
-<li>“data.csv” is the metabolomic dataset you want to process. Rows are features and columns are feature abundance of samples and information of features. The information of features must contain “name” (feature name), “mz” (mass to change ratio) and “rt” (retention time). Other information of features are optional, for example “isotopes” and “adducts”. The name of sample can contain “.”, but cannot contain “-“ and space. And the start of sample name cannot be number. <strong>For example, “A210.a” and “A210a” are valid, and “210a” or “210-a” are invalid.</strong></li>
-<li>“sample.information.csv” is sample information for metabolomic dataset. Column 1 is “sample.name” which is the names of subject and QC samples. Please confirm that the sample names in “sample.information.csv” and “data.csv” are completely same. Column 2 is “injection.order” which is the injection order of QC and subject samples. Column 3 is “class”, which is used to distinguish “QC” and “Subject” samples. Column 4 is “batch” to provide acquisition batch information for samples. Column 5 is “group”, which is used to label the group of subject sample, for example, “control” and “case”. The “group” of QC samples is labeled as “QC”.</li>
-</ol>
-<p><img src="/images/metcleaning/data organisation.jpg" alt="Figure2 Data organisation of MetCleaning"></p>
-<p>Then you can run <em>MetClean</em> function to do data cleaning of data. All the arguments of <em>MetClean</em> can be found in the other functions in <em>MetCleaning</em>. You can use <em>help(package = “MetCleaning”)</em> to see the help page of <em>MetCleaning</em>.</p>
-<p>code 3: Running of <em>MetClean</em></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">##demo data</div><div class="line">MetClean(polarity = &quot;positive&quot;)</div></pre></td></tr></table></figure>
-<p>Running results of <em>MetClean</em><br>1.Missing or zero values filtering. In the missing or zero value filtering step, if there are samples which beyond the threshold you set, you should decide to filter them or not. We recommend to remove all of them as Figure 3 shows.</p>
-<p><img src="/images/metcleaning/mv filter.jpg" alt="Figure3 Missing or zero value filtering"></p>
-<p>2.Sample filtering. In the QC or subject sample filtering step (based on PCA), if there are samples which beyond the threshold you set, you should decide to filter them or not. We don’t recommend to remove them as Figure 4 shows, because they should be consired combined other information.</p>
-<p><img src="/images/metcleaning/sample filter.jpg" alt="Figure4 Sample filtering"></p>
-<p>3.Output files. Output files of <em>MetClean</em> are listed as Figure 5 shows.<br>(1) “1MV overview”, “2MV filter”, “3Zero overview” and “4Zero filter” are missing and zero values filtering information.<br>(2) “5QC outlier filter” and “6Subject outlier filter” are sample filtering based on PCA information.<br>(3) “7Normalization result” is the data normalization information for each batch.<br>(4) “8Batch effect” is the batch effect both in before and after data cleaning.<br>(5) “9metabolite plot” is the scatter plot for each feature.<br>(6) “10Data overview” is the overview of data.<br>(7) “11RSD overview” is the RSD distribution for each batch both before and after data cleaning.<br>(8) <strong>“data_after_pre.csv”, “qc.info.csv” and “subject.info”</strong> are the data and sample information after data cleaning.<br>(9) “intermediate” is the intermediate data during processing.</p>
-<p><img src="/images/metcleaning/output files of MetClean.jpg" alt="Figure5 Output files of *MetClean*"></p>
-<h2 id="Statistical-analysis"><a href="#Statistical-analysis" class="headerlink" title="Statistical analysis"></a><strong>Statistical analysis</strong></h2><hr>
-<p>Data statistical analysis is integrated as a function named as <em>MetStat</em> in <em>MetCleaning</em>. We use the demo data as the example. <strong>Please note that now <em>MetStat</em> can only process two class data.</strong> Copy the code below and paste in you R console.</p>
-<p>code 4: Demo data of <em>MetStat</em></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">data(&quot;met.data.after.pre&quot;, package = &quot;MetCleaning&quot;)</div><div class="line">data(new.group, package = &quot;MetCleaning&quot;)</div><div class="line">##create a folder for MetStat demo</div><div class="line">dir.create(&quot;Demo for MetStat&quot;)</div><div class="line">setwd(&quot;Demo for MetStat&quot;)</div><div class="line">## export the demo data as csv</div><div class="line">write.csv(new.group, &quot;new.group.csv&quot;, row.names = FALSE)</div></pre></td></tr></table></figure>
-<p>The demo data have been added in your work directory. “new.group.csv” is a sample.information which has been changed the group information you want to use for statistical analysis. For the sample which you don’t want to use them for statistical analysis, you can set they group information as NA like Figure 6 shows.</p>
-<p><img src="/images/metcleaning/new.group.jpg" alt="Figure6 new group information"></p>
-<p>code 5: Running of <em>MetStat</em></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">MetStat(MetFlowData = met.data.after.pre, new.group = TRUE)</div></pre></td></tr></table></figure>
-<p>Running results of <em>MetStat</em><br>1.Sample removing. Firstly, you need to confirm the samples which you want to remove form dataset as Figure 7 shows.</p>
-<p><img src="/images/metcleaning/sample remove.jpg" alt="Figure7 sample removing confirmation"></p>
-<p>2.Number of component selection in PLS-DA analysis. In PLS-DA analysis, you should manually select the best choice of the number of component. When the Console show “How many comps do you want to see?”, you can type 10 and enter “Enter” key. Then a MSE plot is showing, and the best number of component is the one has the smallest CV values. So type the number (in this example is 4) and enter “Enter” key.</p>
-<p><img src="/images/metcleaning/PLS analysis.jpg" alt="Figure8 Number of component selection in PLS-DA analysis"></p>
-<p>3.Output files. Output files of <em>MetStat</em> are listed as Figure 9 shows.<br>(1) “12PCA analysis” is the PCA score plot.<br>(2) “13PLS analysis” contains the PLS-DA results.<br>(3) “14heatmap” is the heatmap.<br>(4) “15marker selection” contains the information of markers, volcano plot and boxplots of markers.<br>(5) <strong>“data_after_stat.csv”, “qc.info.csv” and “subject.info”</strong> are the data and sample information after statistical analysis.<br>(6) “intermediate” is the intermediate data during processing.</p>
-<p><img src="/images/metcleaning/output files of MetStat.jpg" alt="Figure9 Output files of *MetStat*"></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://shenxt.me/2017/09/14/2012-02-22-github-pages/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Japser Shen">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Omics China">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/09/14/2012-02-22-github-pages/" itemprop="url">使用Github Pages建独立博客</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-14T20:29:33+08:00">
-                2017-09-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/09/14/2012-02-22-github-pages/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/09/14/2012-02-22-github-pages/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><a href="http://github.com" title="Github" target="_blank" rel="external">Github</a>很好的将代码和社区联系在了一起，于是发生了很多有趣的事情，世界也因为他美好了一点点。Github作为现在最流行的代码仓库，已经得到很多大公司和项目的青睐，比如<a href="https://github.com/jquery/jquery" title="jQuery@github" target="_blank" rel="external">jQuery</a>、<a href="https://github.com/twitter/bootstrap" title="Twitter@github" target="_blank" rel="external">Twitter</a>等。为使项目更方便的被人理解，介绍页面少不了，甚至会需要完整的文档站，Github替你想到了这一点，他提供了<a href="http://pages.github.com/" title="Github Pages" target="_blank" rel="external">Github Pages</a>的服务，不仅可以方便的为项目建立介绍站点，也可以用来建立个人博客。</p>
-<p>Github Pages有以下几个优点：</p>
-<ul><br>    <li>轻量级的博客系统，没有麻烦的配置</li><br>    <li>使用标记语言，比如<a href="http://markdown.tw" target="_blank" rel="external">Markdown</a></li><br>    <li>无需自己搭建服务器</li><br>    <li>根据Github的限制，对应的每个站有300MB空间</li><br>    <li>可以绑定自己的域名</li><br></ul>
-
-<p>当然他也有缺点：</p>
-<ul>
-<li>使用<a href="https://github.com/mojombo/jekyll" title="Jekyll" target="_blank" rel="external">Jekyll</a>模板系统，相当于静态页发布，适合博客，文档介绍等。</li>
-<li>动态程序的部分相当局限，比如没有评论，不过还好我们有解决方案。</li>
-<li>基于Git，很多东西需要动手，不像Wordpress有强大的后台</li>
-</ul>
-<p>大致介绍到此，作为个人博客来说，简洁清爽的表达自己的工作、心得，就已达目标，所以Github Pages是我认为此需求最完美的解决方案了。</p>
-<h2 id="购买、绑定独立域名"><a href="#购买、绑定独立域名" class="headerlink" title="购买、绑定独立域名"></a>购买、绑定独立域名</h2><p>虽说<a href="http://www.godaddy.com/" title="Godaddy" target="_blank" rel="external">Godaddy</a>曾支持过SOPA，并且首页放着极其不专业的大胸美女，但是作为域名服务商他做的还不赖，选择它最重要的原因是他支持支付宝，没有信用卡有时真的很难过。</p>
-<p>域名的购买不用多讲，注册、选域名、支付，有网购经验的都毫无压力，优惠码也遍地皆是。域名的配置需要提醒一下，因为伟大英明的GFW的存在，我们必须多做些事情。</p>
-<p>流传Godaddy的域名解析服务器被墙掉，导致域名无法访问，后来这个事情在<a href="http://beiyuu.com" title="BeiYuu" target="_blank" rel="external">BeiYuu</a>也发生了，不得已需要把域名解析服务迁移到国内比较稳定的服务商处，这个迁移对于域名来说没有什么风险，最终的控制权还是在Godaddy那里，你随时都可以改回去。</p>
-<p>我们选择<a href="https://www.dnspod.cn/" title="DNSPod" target="_blank" rel="external">DNSPod</a>的服务，他们的产品做得不错，易用、免费，收费版有更高端的功能，暂不需要。注册登录之后，按照DNSPod的说法，只需三步（我们插入一步）：</p>
-<ul><br>    <li>首先添加域名记录，可参考DNSPod的帮助文档：<a href="https://www.dnspod.cn/Support" target="_blank" rel="external">https://www.dnspod.cn/Support</a></li><br>    <li>在DNSPod自己的域名下添加一条<a href="http://baike.baidu.com/view/65575.htm" target="_blank" rel="external">A记录</a>，地址就是Github Pages的服务IP地址：207.97.227.245</li><br>    <li>在域名注册商处修改DNS服务:去Godaddy修改Nameservers为这两个地址：f1g1ns1.dnspod.net、f1g1ns2.dnspod.net。如果你不明白在哪里修改，可以参考这里：<a href="https://www.dnspod.cn/support/index/fid/119" target="_blank" rel="external">Godaddy注册的域名如何使用DNSPod</a></li><br>    <li>等待域名解析生效</li><br></ul>
-
-<p>域名的配置部分完成，跪谢方校长。</p>
-<h2 id="配置和使用Github"><a href="#配置和使用Github" class="headerlink" title="配置和使用Github"></a>配置和使用Github</h2><p>Git是版本管理的未来，他的优点我不再赘述，相关资料很多。推荐这本<a href="http://progit.org/book/zh/" title="Pro Git中文版" target="_blank" rel="external">Git中文教程</a>。</p>
-<p>要使用Git，需要安装它的客户端，推荐在Linux下使用Git，会比较方便。Windows版的下载地址在这里：<a href="http://code.google.com/p/msysgit/downloads/list" title="Windows版Git客户端" target="_blank" rel="external">http://code.google.com/p/msysgit/downloads/list</a>。其他系统的安装也可以参考官方的<a href="http://help.github.com/mac-set-up-git/" title="Mac下Git安装" target="_blank" rel="external">安装教程</a>。</p>
-<p>下载安装客户端之后，各个系统的配置就类似了，我们使用windows作为例子，Linux和Mac与此类似。</p>
-<p>在Windows下，打开Git Bash，其他系统下面则打开终端（Terminal）：<br><img src="/images/githubpages/bootcamp_1_win_gitbash.jpg" alt="Git Bash"></p>
-<h3 id="1、检查SSH-keys的设置"><a href="#1、检查SSH-keys的设置" class="headerlink" title="1、检查SSH keys的设置"></a>1、检查SSH keys的设置</h3><p>首先我们需要检查你电脑上现有的ssh key：</p>
-<pre><code>$ cd ~/.ssh
-</code></pre><p>如果显示“No such file or directory”，跳到第三步，否则继续。</p>
-<h3 id="2、备份和移除原来的ssh-key设置："><a href="#2、备份和移除原来的ssh-key设置：" class="headerlink" title="2、备份和移除原来的ssh key设置："></a>2、备份和移除原来的ssh key设置：</h3><p>因为已经存在key文件，所以需要备份旧的数据并删除：</p>
-<pre><code>$ ls
-config    id_rsa    id_rsa.pub    known_hosts
-$ mkdir key_backup
-$ cp id_rsa* key_backup
-$ rm id_rsa*
-</code></pre><h3 id="3、生成新的SSH-Key："><a href="#3、生成新的SSH-Key：" class="headerlink" title="3、生成新的SSH Key："></a>3、生成新的SSH Key：</h3><p>输入下面的代码，就可以生成新的key文件，我们只需要默认设置就好，所以当需要输入文件名的时候，回车就好。</p>
-<pre><code>$ ssh-keygen -t rsa -C &quot;邮件地址@youremail.com&quot;
-Generating public/private rsa key pair.
-Enter file in which to save the key (/Users/your_user_directory/.ssh/id_rsa):&lt;回车就好&gt;
-</code></pre><p>然后系统会要你输入加密串（<a href="http://help.github.com/ssh-key-passphrases/" target="_blank" rel="external">Passphrase</a>）：</p>
-<pre><code>Enter passphrase (empty for no passphrase):&lt;输入加密串&gt;
-Enter same passphrase again:&lt;再次输入加密串&gt;
-</code></pre><p>最后看到这样的界面，就成功设置ssh key了：<br><img src="/images/githubpages/ssh-key-set.png" alt="ssh key success"></p>
-<h3 id="4、添加SSH-Key到GitHub："><a href="#4、添加SSH-Key到GitHub：" class="headerlink" title="4、添加SSH Key到GitHub："></a>4、添加SSH Key到GitHub：</h3><p>在本机设置SSH Key之后，需要添加到GitHub上，以完成SSH链接的设置。</p>
-<p>用文本编辑工具打开id_rsa.pub文件，如果看不到这个文件，你需要设置显示隐藏文件。准确的复制这个文件的内容，才能保证设置的成功。</p>
-<p>在GitHub的主页上点击设置按钮：<br><img src="/images/githubpages/github-account-setting.png" alt="github account setting"></p>
-<p>选择SSH Keys项，把复制的内容粘贴进去，然后点击Add Key按钮即可：<br><img src="/images/githubpages/bootcamp_1_ssh.jpg" alt="set ssh keys"></p>
-<p>PS：如果需要配置多个GitHub账号，可以参看这个<a href="http://omiga.org/blog/archives/2269" target="_blank" rel="external">多个github帐号的SSH key切换</a>，不过需要提醒一下的是，如果你只是通过这篇文章中所述配置了Host，那么你多个账号下面的提交用户会是一个人，所以需要通过命令<code>git config --global --unset user.email</code>删除用户账户设置，在每一个repo下面使用<code>git config --local user.email &#39;你的github邮箱@mail.com&#39;</code> 命令单独设置用户账户信息</p>
-<h3 id="5、测试一下"><a href="#5、测试一下" class="headerlink" title="5、测试一下"></a>5、测试一下</h3><p>可以输入下面的命令，看看设置是否成功，<code>git@github.com</code>的部分不要修改：</p>
-<pre><code>$ ssh -T git@github.com
-</code></pre><p>如果是下面的反应：</p>
-<pre><code>The authenticity of host &apos;github.com (207.97.227.239)&apos; can&apos;t be established.
-RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
-Are you sure you want to continue connecting (yes/no)?
-</code></pre><p>不要紧张，输入<code>yes</code>就好，然后会看到：</p>
-<pre><code>Hi &lt;em&gt;username&lt;/em&gt;! You&apos;ve successfully authenticated, but GitHub does not provide shell access.
-</code></pre><h3 id="6、设置你的账号信息"><a href="#6、设置你的账号信息" class="headerlink" title="6、设置你的账号信息"></a>6、设置你的账号信息</h3><p>现在你已经可以通过SSH链接到GitHub了，还有一些个人信息需要完善的。</p>
-<p>Git会根据用户的名字和邮箱来记录提交。GitHub也是用这些信息来做权限的处理，输入下面的代码进行个人信息的设置，把名称和邮箱替换成你自己的，名字必须是你的真名，而不是GitHub的昵称。</p>
-<pre><code>$ git config --global user.name &quot;你的名字&quot;
-$ git config --global user.email &quot;your_email@youremail.com&quot;
-</code></pre><h4 id="设置GitHub的token"><a href="#设置GitHub的token" class="headerlink" title="设置GitHub的token"></a>设置GitHub的token</h4><p>2012-4-28补充：新版的接口已经不需要配置token了，所以下面这段可以跳过了</p>
-<p>有些工具没有通过SSH来链接GitHub。如果要使用这类工具，你需要找到然后设置你的API Token。</p>
-<p>在GitHub上，你可以点击<em>Account Setting &gt; Account Admin</em>：<br><img src="/images/githubpages/bootcamp_1_token.jpg" alt="set ssh keys"></p>
-<p>然后在你的命令行中，输入下面的命令，把token添加进去：</p>
-<pre><code>$ git config --global user.name &quot;你的名字&quot;
-$ git config --global user.token 0123456789your123456789token
-</code></pre><p>如果你改了GitHub的密码，需要重新设置token。</p>
-<h3 id="成功了"><a href="#成功了" class="headerlink" title="成功了"></a>成功了</h3><p>好了，你已经可以成功连接GitHub了。</p>
-<h2 id="使用GitHub-Pages建立博客"><a href="#使用GitHub-Pages建立博客" class="headerlink" title="使用GitHub Pages建立博客"></a>使用GitHub Pages建立博客</h2><p>与GitHub建立好链接之后，就可以方便的使用它提供的Pages服务，GitHub Pages分两种，一种是你的GitHub用户名建立的<code>username.github.io</code>这样的用户&amp;组织页（站），另一种是依附项目的pages。</p>
-<h3 id="User-amp-Organization-Pages"><a href="#User-amp-Organization-Pages" class="headerlink" title="User &amp; Organization Pages"></a>User &amp; Organization Pages</h3><p>想建立个人博客是用的第一种，形如<code>beiyuu.github.io</code>这样的可访问的站，每个用户名下面只能建立一个，创建之后点击<code>Admin</code>进入项目管理，可以看到是这样的：<br><img src="/images/githubpages/user-pages.png" alt="user pages"><br>而普通的项目是这样的，即使你也是用的<code>othername.github.io</code>：<br><img src="/images/githubpages/other-pages.png" alt="other pages"></p>
-<p>创建好<code>username.github.io</code>项目之后，提交一个<code>index.html</code>文件，然后<code>push</code>到GitHub的<code>master</code>分支（也就是普通意义上的主干）。第一次页面生效需要一些时间，大概10分钟左右。</p>
-<p>生效之后，访问<code>username.github.io</code>就可以看到你上传的页面了，<a href="http://beiyuu.github.io" target="_blank" rel="external">beiyuu.github.io</a>就是一个例子。</p>
-<p>关于第二种项目<code>pages</code>，简单提一下，他和用户pages使用的后台程序是同一套，只不过它的目的是项目的帮助文档等跟项目绑定的内容，所以需要在项目的<code>gh-pages</code>分支上去提交相应的文件，GitHub会自动帮你生成项目pages。具体的使用帮助可以参考<a href="http://pages.github.com/" title="Github Pages" target="_blank" rel="external">Github Pages</a>的官方文档：</p>
-<h3 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h3><p>我们在第一部分就提到了在DNS部分的设置，再来看在GitHub的配置，要想让<code>username.github.io</code>能通过你自己的域名来访问，需要在项目的根目录下新建一个名为<code>CNAME</code>的文件，文件内容形如：</p>
-<pre><code>beiyuu.com
-</code></pre><p>你也可以绑定在二级域名上：</p>
-<pre><code>blog.beiyuu.com
-</code></pre><p>需要提醒的一点是，如果你使用形如<code>beiyuu.com</code>这样的一级域名的话，需要在DNS处设置A记录到<code>207.97.227.245</code>（<strong>这个地址会有变动，<a href="https://help.github.com/articles/my-custom-domain-isn-t-working" target="_blank" rel="external">这里</a>查看</strong>），而不是在DNS处设置为CNAME的形式，否则可能会对其他服务（比如email）造成影响。</p>
-<p>设置成功后，根据DNS的情况，最长可能需要一天才能生效，耐心等待吧。</p>
-<h2 id="Jekyll模板系统"><a href="#Jekyll模板系统" class="headerlink" title="Jekyll模板系统"></a>Jekyll模板系统</h2><p>GitHub Pages为了提供对HTML内容的支持，选择了<a href="https://github.com/mojombo/jekyll" title="Jekyll" target="_blank" rel="external">Jekyll</a>作为模板系统，Jekyll是一个强大的静态模板系统，作为个人博客使用，基本上可以满足要求，也能保持管理的方便，你可以查看<a href="https://github.com/mojombo/jekyll/blob/master/README.textile" target="_blank" rel="external">Jekyll官方文档</a>。</p>
-<p>你可以直接fork<a href="https://github.com/beiyuu/Github-Pages-Example" target="_blank" rel="external">我的项目</a>，然后改名，就有了你自己的满足Jekyll要求的文档了，当然你也可以按照下面的介绍自己创建。</p>
-<h3 id="Jekyll基本结构"><a href="#Jekyll基本结构" class="headerlink" title="Jekyll基本结构"></a>Jekyll基本结构</h3><p>Jekyll的核心其实就是一个文本的转换引擎，用你最喜欢的标记语言写文档，可以是Markdown、Textile或者HTML等等，再通过<code>layout</code>将文档拼装起来，根据你设置的URL规则来展现，这些都是通过严格的配置文件来定义，最终的产出就是web页面。</p>
-<p>基本的Jekyll结构如下：</p>
-<pre><code>|-- _config.yml
-|-- _includes
-|-- _layouts
-|   |-- default.html
-|   `-- post.html
-|-- _posts
-|   |-- 2007-10-29-why-every-programmer-should-play-nethack.textile
-|   `-- 2009-04-26-barcamp-boston-4-roundup.textile
-|-- _site
-`-- index.html
-</code></pre><p>简单介绍一下他们的作用：</p>
-<h4 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h4><p>配置文件，用来定义你想要的效果，设置之后就不用关心了。</p>
-<h4 id="includes"><a href="#includes" class="headerlink" title="_includes"></a>_includes</h4><p>可以用来存放一些小的可复用的模块，方便通过<code>{ % include file.ext %}</code>（去掉前两个{中或者{与%中的空格，下同）灵活的调用。这条命令会调用_includes/file.ext文件。</p>
-<h4 id="layouts"><a href="#layouts" class="headerlink" title="_layouts"></a>_layouts</h4><p>这是模板文件存放的位置。模板需要通过<a href="https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter" target="_blank" rel="external">YAML front matter</a>来定义，后面会讲到，<code>{ { content }}</code>标记用来将数据插入到这些模板中来。</p>
-<h4 id="posts"><a href="#posts" class="headerlink" title="_posts"></a>_posts</h4><p>你的动态内容，一般来说就是你的博客正文存放的文件夹。他的命名有严格的规定，必须是<code>2012-02-22-artical-title.MARKUP</code>这样的形式，MARKUP是你所使用标记语言的文件后缀名，根据_config.yml中设定的链接规则，可以根据你的文件名灵活调整，文章的日期和标记语言后缀与文章的标题的独立的。</p>
-<h4 id="site"><a href="#site" class="headerlink" title="_site"></a>_site</h4><p>这个是Jekyll生成的最终的文档，不用去关心。最好把他放在你的<code>.gitignore</code>文件中忽略它。</p>
-<h4 id="其他文件夹"><a href="#其他文件夹" class="headerlink" title="其他文件夹"></a>其他文件夹</h4><p>你可以创建任何的文件夹，在根目录下面也可以创建任何文件，假设你创建了<code>project</code>文件夹，下面有一个<code>github-pages.md</code>的文件，那么你就可以通过<code>yoursite.com/project/github-pages</code>访问的到，如果你是使用一级域名的话。文件后缀可以是<code>.html</code>或者<code>markdown</code>或者<code>textile</code>。这里还有很多的例子：<a href="https://github.com/mojombo/jekyll/wiki/Sites" target="_blank" rel="external">https://github.com/mojombo/jekyll/wiki/Sites</a></p>
-<h3 id="Jekyll的配置"><a href="#Jekyll的配置" class="headerlink" title="Jekyll的配置"></a>Jekyll的配置</h3><p>Jekyll的配置写在_config.yml文件中，可配置项有很多，我们不去一一追究了，很多配置虽有用但是一般不需要去关心，<a href="https://github.com/mojombo/jekyll/wiki/configuration" target="_blank" rel="external">官方配置文档</a>有很详细的说明，确实需要了可以去这里查，我们主要说两个比较重要的东西，一个是<code>Permalink</code>，还有就是自定义项。</p>
-<p><code>Permalink</code>项用来定义你最终的文章链接是什么形式，他有下面几个变量：</p>
-<ul>
-<li><code>year</code> 文件名中的年份</li>
-<li><code>month</code> 文件名中的月份</li>
-<li><code>day</code> 文件名中的日期</li>
-<li><code>title</code> 文件名中的文章标题</li>
-<li><code>categories</code> 文章的分类，如果文章没有分类，会忽略</li>
-<li><code>i-month</code> 文件名中的除去前缀0的月份</li>
-<li><code>i-day</code> 文件名中的除去前缀0的日期</li>
-</ul>
-<p>看看最终的配置效果：</p>
-<ul>
-<li><code>permalink: pretty</code> /2009/04/29/slap-chop/index.html</li>
-<li><code>permalink: /:month-:day-:year/:title.html</code> /04-29-2009/slap-chop.html</li>
-<li><code>permalink: /blog/:year/:month/:day/:title</code> /blog/2009/04/29/slap-chop/index.html</li>
-</ul>
-<p>我使用的是：</p>
-<ul>
-<li><code>permalink: /:title</code> /github-pages</li>
-</ul>
-<p>自定义项的内容，例如我们定义了<code>title:BeiYuu的博客</code>这样一项，那么你就可以在文章中使用<code>{ { site.title }}</code>来引用这个变量了，非常方便定义些全局变量。</p>
-<h3 id="YAML-Front-Matter和模板变量"><a href="#YAML-Front-Matter和模板变量" class="headerlink" title="YAML Front Matter和模板变量"></a>YAML Front Matter和模板变量</h3><p>对于使用YAML定义格式的文章，Jekyll会特别对待，他的格式要求比较严格，必须是这样的形式：</p>
-<pre><code>---
-layout: post
-title: Blogging Like a Hacker
----
-</code></pre><p>前后的<code>---</code>不能省略，在这之间，你可以定一些你需要的变量，layout就是调用<code>_layouts</code>下面的某一个模板，他还有一些其他的变量可以使用：</p>
-<ul>
-<li><code>permalink</code> 你可以对某一篇文章使用通用设置之外的永久链接</li>
-<li><code>published</code> 可以单独设置某一篇文章是否需要发布</li>
-<li><code>category</code> 设置文章的分类</li>
-<li><code>tags</code> 设置文章的tag</li>
-</ul>
-<p>上面的<code>title</code>就是自定义的内容，你也可以设置其他的内容，在文章中可以通过<code>{ { page.title }}</code>这样的形式调用。</p>
-<p>模板变量，我们之前也涉及了不少了，还有其他需要的变量，可以参考官方的文档：<a href="https://github.com/mojombo/jekyll/wiki/template-data" title="Jekyll Template Data" target="_blank" rel="external">https://github.com/mojombo/jekyll/wiki/template-data</a></p>
-<h2 id="使用Disqus管理评论"><a href="#使用Disqus管理评论" class="headerlink" title="使用Disqus管理评论"></a>使用Disqus管理评论</h2><p>模板部分到此就算是配置完毕了，但是Jekyll只是个静态页面的发布系统，想做到关爽场倒是很容易，如果想要评论呢？也很简单。</p>
-<p>现在专做评论模块的产品有很多，比如<a href="http://disqus.com/" target="_blank" rel="external">Disqus</a>，还有国产的<a href="http://duoshuo.com/" target="_blank" rel="external">多说</a>，Disqus对现在各种系统的支持都比较全面，到写博客为止，多说现在仅是WordPress的一个插件，所以我这里暂时也使用不了，多说与国内的社交网络紧密结合，还是有很多亮点的，值得期待一下。我先选择了Disqus。</p>
-<p>注册账号什么的就不提了，Disqus支持很多的博客平台，参见下图：<br><img src="/images/githubpages/disqus-site.jpg" alt="Disqus sites"></p>
-<p>我们选择最下面的<code>Universal Code</code>就好，然后会看到一个介绍页面，把下面这段代码复制到你的模板里面，可以只复制到显示文章的模板中：</p>
-<pre><code>&lt;div id=&quot;disqus_thread&quot;&gt;&lt;/div&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = &apos;example&apos;; // required: replace example with your forum shortname 这个地方需要改成你配置的网站名
-
-    /* * * DON&apos;T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement(&apos;script&apos;); dsq.type = &apos;text/javascript&apos;; dsq.async = true;
-        dsq.src = &apos;http://&apos; + disqus_shortname + &apos;.disqus.com/embed.js&apos;;
-        (document.getElementsByTagName(&apos;head&apos;)[0] || document.getElementsByTagName(&apos;body&apos;)[0]).appendChild(dsq);
-    })();
-&lt;/script&gt;
-&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;http://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
-&lt;a href=&quot;http://disqus.com&quot; class=&quot;dsq-brlink&quot;&gt;blog comments powered by &lt;span class=&quot;logo-disqus&quot;&gt;Disqus&lt;/span&gt;&lt;/a&gt;
-</code></pre><p>配置完之后，你也可以做一些异步加载的处理，提高性能，比如我就在最开始页面打开的时候不显示评论，当你想看评论的时候，点击“显示评论”再加载Disqus的模块。代码很简单，你可以参考我的写法。</p>
-<pre><code>$(&apos;#disqus_container .comment&apos;).on(&apos;click&apos;,function(){
-        $(this).html(&apos;加载中...&apos;);
-        var disqus_shortname = &apos;beiyuu&apos;;
-        var that = this;
-        BYB.includeScript(&apos;http://&apos; + disqus_shortname + &apos;.disqus.com/embed.js&apos;,function(){$(that).remove()}); //这是一个加载js的函数
-});
-</code></pre><p>如果你不喜欢Disqus的样式，你也可以根据他生成的HTML结构，自己改写样式覆盖它的，Disqus现在也提供每个页面的评论数接口，<a href="http://docs.disqus.com/developers/universal/" target="_blank" rel="external">帮助文档</a>在这里可以看到。</p>
-<h2 id="代码高亮插件"><a href="#代码高亮插件" class="headerlink" title="代码高亮插件"></a>代码高亮插件</h2><p>如果写技术博客，代码高亮少不了，有两个可选插件<a href="http://mihai.bazon.net/projects/javascript-syntax-highlighting-engine" target="_blank" rel="external">DlHightLight代码高亮组件</a>和<a href="http://code.google.com/p/google-code-prettify/" target="_blank" rel="external">Google Code Prettify</a>。DLHightLight支持的语言相对较少一些，有js、css、xml和html，Google的高亮插件基本上任何语言都支持，也可以自定义语言，也支持自动识别，也有行号的特别支持。</p>
-<p>Google的高亮插件使用也比较方便，只需要在<code>&lt;pre&gt;</code>的标签上加入<code>prettyprint</code>即可。所以我选择了Google Code Prettify。</p>
-<h2 id="搭建本地jekyll环境"><a href="#搭建本地jekyll环境" class="headerlink" title="搭建本地jekyll环境"></a>搭建本地jekyll环境</h2><p>这里主要介绍一下在Mac OS X下面的安装过程，其他操作系统可以参考官方的<a href="https://github.com/mojombo/jekyll/wiki/Install" target="_blank" rel="external">jekyll安装</a>。</p>
-<p>作为生活在水深火热的墙内人民，有必要进行下面一步修改gem的源，方便我们更快的下载所需组建：</p>
-<pre><code>sudo gem sources --remove http://rubygems.org/
-sudo gem sources -a http://ruby.taobao.org/
-</code></pre><p>然后用Gem安装jekyll</p>
-<pre><code>$ gem install jekyll
-</code></pre><p>不过一般如果有出错提示，你可能需要这样安装：</p>
-<pre><code>$ sudo gem install jekyll
-</code></pre><p>我到了这一步的时候总是提示错误<code>Failed to build gem native extension</code>，很可能的一个原因是没有安装rvm，<a href="https://rvm.io/rvm/install/" target="_blank" rel="external">rvm的安装</a>可以参考这里，或者敲入下面的命令：</p>
-<pre><code>$ curl -L https://get.rvm.io | bash -s stable --ruby
-</code></pre><p>然后还需要安装Markdown的解释器，这个需要在你的_config.yml里面设置<code>markdown:rdiscount</code>：</p>
-<pre><code>$ gem install jekyll rdiscount
-</code></pre><p>好了，如果一切顺利的话，本地环境就基本搭建完成了，进入之前我们建立的博客目录，运行下面的命令：</p>
-<pre><code>$ jekyll serve --watch
-</code></pre><p>这个时候，你就可以通过<code>localhost:4000</code>来访问了。还有关于<a href="http://jekyllbootstrap.com/" target="_blank" rel="external">jekyll bootstrap</a>的资料，需要自己修改调试的，可以研究一下。</p>
-<p>我在这个过程中还遇到两个诡异的没有解决的问题，一个是我放在根目录下面的blog.md等文件，在GitHub的pages服务上一切正常，可以通过<code>beiyuu.com/blog</code>访问的到，但是在本地环境下，总是<code>not found</code>，很是让人郁闷，看生成的<code>_site</code>目录下面的文件，也是正常的<code>blog.html</code>，但就是找不到，只有当我把URL改为<code>localhost:4000/blog.html</code>的时候，才能访问的到，环境不同真糟糕。</p>
-<p>还有一个是关于<code>category</code>的问题，根据<code>YAML</code>的语法，我们在文章头部可以定义文章所属的类别，也可以定义为<code>category:[blog,rss]</code>这样子的多类别，我在本地试一切正常，但是push到GitHub之后，就无法读取了，真让人着急，没有办法，只能采用别的办法满足我的需求了。这里还有一篇<a href="http://chxt6896.github.com/blog/2012/02/13/blog-jekyll-native.html" target="_blank" rel="external">Jekyll 本地调试之若干问题</a>，安装中如果有其他问题，也可以对照参考一下。</p>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>如果你跟着这篇不那么详尽的教程，成功搭建了自己的博客，恭喜你！剩下的就是保持热情的去写自己的文章吧。</p>
-
-          
+          虽然相对于python来说，R语言爬虫并不是那么流行，但是对于比较小的数据爬取量，使用R还是很方便的。R的数据爬取比较流行的是利用XML和RCurl包进行爬取，在这篇博客里面，我就利用XML和RCurl包进行KEGG和HMDB的数据爬取。
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/09/14/2016-12-03-keggandhmdb/">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1140,7 +595,7 @@ sudo gem sources -a http://ruby.taobao.org/
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-14T20:29:33+08:00">
                 2017-09-14
@@ -1161,7 +616,7 @@ sudo gem sources -a http://ruby.taobao.org/
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">in</span>
+                <span class="post-meta-item-text">In</span>
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -1172,7 +627,7 @@ sudo gem sources -a http://ruby.taobao.org/
 
                 
                 
-                  . 
+                  , 
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
@@ -1225,128 +680,14 @@ sudo gem sources -a http://ruby.taobao.org/
 
       
         
-          
-            <p><img src="logo.png" alt=""></p>
-<hr>
-<h3 id="Ⅰ数据准备"><a href="#Ⅰ数据准备" class="headerlink" title="Ⅰ数据准备"></a><strong>Ⅰ数据准备</strong></h3><h4 id="MetDNA需要准备的数据包括一级数据peak-table-csv格式-，二级数据-mgf格式-和样品信息sample-info-csv格式-。点击下载正离子demo数据和负离子demo数据。"><a href="#MetDNA需要准备的数据包括一级数据peak-table-csv格式-，二级数据-mgf格式-和样品信息sample-info-csv格式-。点击下载正离子demo数据和负离子demo数据。" class="headerlink" title="MetDNA需要准备的数据包括一级数据peak table(csv格式)，二级数据(mgf格式)和样品信息sample.info(csv格式)。点击下载正离子demo数据和负离子demo数据。"></a>MetDNA需要准备的数据包括一级数据peak table(csv格式)，二级数据(mgf格式)和样品信息sample.info(csv格式)。点击下载<a href="https://github.com/jaspershen/MetDNA/blob/master/pos.rar" target="_blank" rel="external">正离子demo数据</a>和<a href="https://github.com/jaspershen/MetDNA/blob/master/neg.rar" target="_blank" rel="external">负离子demo数据</a>。</h4><h4 id="Table-1-demo数据信息"><a href="#Table-1-demo数据信息" class="headerlink" title="Table 1: demo数据信息"></a><strong>Table 1: demo数据信息</strong></h4><table>
-<thead>
-<tr>
-<th>组别</th>
-<th>个数</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>QC</td>
-<td>8</td>
-<td>QC</td>
-</tr>
-<tr>
-<td>W03</td>
-<td>10</td>
-<td>野生型3天</td>
-</tr>
-<tr>
-<td>W30</td>
-<td>10</td>
-<td>野生型30天</td>
-</tr>
-<tr>
-<td>E03</td>
-<td>10</td>
-<td>突变型E3天</td>
-</tr>
-<tr>
-<td>E30</td>
-<td>10</td>
-<td>突变型E30天</td>
-</tr>
-<tr>
-<td>P03</td>
-<td>10</td>
-<td>突变型P3天</td>
-</tr>
-<tr>
-<td>P30</td>
-<td>10</td>
-<td>突变型P30天</td>
-</tr>
-</tbody>
-</table>
-<h3 id="1-一级数据"><a href="#1-一级数据" class="headerlink" title="1. 一级数据"></a><strong>1. 一级数据</strong></h3><h4 id="一级数据可以是使用XCMS，MZmine，MS-DIAL或者其他软件处理之后的数据。第一列为代谢物峰的名字，”name”，第二列为”mz”，第三列为保留时间-RT-，且单位必须为秒，其他为样品的峰强度。"><a href="#一级数据可以是使用XCMS，MZmine，MS-DIAL或者其他软件处理之后的数据。第一列为代谢物峰的名字，”name”，第二列为”mz”，第三列为保留时间-RT-，且单位必须为秒，其他为样品的峰强度。" class="headerlink" title="一级数据可以是使用XCMS，MZmine，MS-DIAL或者其他软件处理之后的数据。第一列为代谢物峰的名字，”name”，第二列为”mz”，第三列为保留时间(RT)，且单位必须为秒，其他为样品的峰强度。"></a>一级数据可以是使用XCMS，MZmine，MS-DIAL或者其他软件处理之后的数据。第一列为代谢物峰的名字，”name”，第二列为”mz”，第三列为保留时间(RT)，<strong>且单位必须为秒</strong>，其他为样品的峰强度。</h4><p><img src="data.example.png" alt="**Figure 1: 一级数据peak table格式示例**"></p>
-<h3 id="2-二级数据"><a href="#2-二级数据" class="headerlink" title="2. 二级数据"></a><strong>2. 二级数据</strong></h3><h4 id="二级质谱原始数据可以是使用QC样品采集的DDA或者targeted-MS-MS数据。对于DDA数据来说，也可以是分段采集的二级数据。质谱原始二级数据需要使用ProteoWizard软件转为mgf格式，转换时参数设置参考下图。二级数据最多不能超过十个。"><a href="#二级质谱原始数据可以是使用QC样品采集的DDA或者targeted-MS-MS数据。对于DDA数据来说，也可以是分段采集的二级数据。质谱原始二级数据需要使用ProteoWizard软件转为mgf格式，转换时参数设置参考下图。二级数据最多不能超过十个。" class="headerlink" title="二级质谱原始数据可以是使用QC样品采集的DDA或者targeted MS/MS数据。对于DDA数据来说，也可以是分段采集的二级数据。质谱原始二级数据需要使用ProteoWizard软件转为mgf格式，转换时参数设置参考下图。二级数据最多不能超过十个。"></a>二级质谱原始数据可以是使用QC样品采集的DDA或者targeted MS/MS数据。对于DDA数据来说，也可以是分段采集的二级数据。质谱原始二级数据需要使用ProteoWizard软件转为mgf格式，转换时参数设置参考下图。二级数据最多不能超过十个。</h4><p><a href="ProteoWizard.png"><strong>Figure 2: ProteoWizard参数设置</strong></a></p>
-<h3 id="3-样品信息"><a href="#3-样品信息" class="headerlink" title="3. 样品信息"></a><strong>3. 样品信息</strong></h3><h4 id="样品信息是样品的分组信息。第一列是样品名，”sample-name”，第二列是样品的分组信息，”group”。"><a href="#样品信息是样品的分组信息。第一列是样品名，”sample-name”，第二列是样品的分组信息，”group”。" class="headerlink" title="样品信息是样品的分组信息。第一列是样品名，”sample.name”，第二列是样品的分组信息，”group”。"></a>样品信息是样品的分组信息。第一列是样品名，”sample.name”，第二列是样品的分组信息，”group”。</h4><p><img src="sample.info示例.png" alt="**Figure 3：样品信息示例**"></p>
-<hr>
-<h3 id="Ⅱ-数据整理"><a href="#Ⅱ-数据整理" class="headerlink" title="Ⅱ 数据整理"></a><strong>Ⅱ 数据整理</strong></h3><h4 id="如果是正离子数据，请建立一个新的文件夹，命名为”POS”，如果是负离子数据，请建立一个新的文件夹命名为”NEG”，然后将一级数据，二级数据和样品信息放置于此文件夹下。并将该文件夹设置为工作路径。现在MetDNA部署在小服务器上，因此可以将数据放在小服务器中-labdata-。例如”V-workreport-申小涛-demo-fly-POS”。"><a href="#如果是正离子数据，请建立一个新的文件夹，命名为”POS”，如果是负离子数据，请建立一个新的文件夹命名为”NEG”，然后将一级数据，二级数据和样品信息放置于此文件夹下。并将该文件夹设置为工作路径。现在MetDNA部署在小服务器上，因此可以将数据放在小服务器中-labdata-。例如”V-workreport-申小涛-demo-fly-POS”。" class="headerlink" title="如果是正离子数据，请建立一个新的文件夹，命名为”POS”，如果是负离子数据，请建立一个新的文件夹命名为”NEG”，然后将一级数据，二级数据和样品信息放置于此文件夹下。并将该文件夹设置为工作路径。现在MetDNA部署在小服务器上，因此可以将数据放在小服务器中(labdata)。例如”V:/workreport/申小涛/demo/fly/POS”。"></a>如果是正离子数据，请建立一个新的文件夹，命名为”POS”，如果是负离子数据，请建立一个新的文件夹命名为”NEG”，然后将一级数据，二级数据和样品信息放置于此文件夹下。并将该文件夹设置为工作路径。现在<em>MetDNA</em>部署在小服务器上，因此可以将数据放在小服务器中(labdata)。例如”V:/workreport/申小涛/demo/fly/POS”。</h4><p><img src="数据整理.png" alt="**Figure 4: 将所需数据放置在文件夹中**"></p>
-<h4 id="设置工作路径。"><a href="#设置工作路径。" class="headerlink" title="设置工作路径。"></a>设置工作路径。</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">setwd(&quot;/mnt/data/samba/labdata/workreport/申小涛/demo/fly/POS&quot;)</div><div class="line">library(MetDNA)</div></pre></td></tr></table></figure>
-<hr>
-<h3 id="Ⅲ-数据处理"><a href="#Ⅲ-数据处理" class="headerlink" title="Ⅲ 数据处理"></a><strong>Ⅲ 数据处理</strong></h3><h3 id="1-只对正离子或者负离子处理"><a href="#1-只对正离子或者负离子处理" class="headerlink" title="1. 只对正离子或者负离子处理"></a><strong>1. 只对正离子或者负离子处理</strong></h3><h4 id="所有的步骤可以使用一个函数MetDNA全部完成。"><a href="#所有的步骤可以使用一个函数MetDNA全部完成。" class="headerlink" title="所有的步骤可以使用一个函数MetDNA全部完成。"></a>所有的步骤可以使用一个函数<em>MetDNA</em>全部完成。</h4><h4 id="运行函数MetDNA。"><a href="#运行函数MetDNA。" class="headerlink" title="运行函数MetDNA。"></a>运行函数<em>MetDNA</em>。</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">MetDNA(ms1.file = &quot;data.csv&quot;,</div><div class="line">       polarity = &quot;positive&quot;,</div><div class="line">       column = &quot;hilic&quot;,</div><div class="line">       ce = &quot;30&quot;,</div><div class="line">       prefer.adduct = &quot;M+H&quot;,</div><div class="line">       use.default.md = TRUE,</div><div class="line">       threads = 3,</div><div class="line">       group = c(&quot;W03&quot;, &quot;W30&quot;),</div><div class="line">       uni.test = &quot;t&quot;,</div><div class="line">       correct = TRUE,</div><div class="line">       p.cutoff = 0.01,</div><div class="line">       species = &quot;dme&quot;)</div></pre></td></tr></table></figure>
-<blockquote>
-<p><strong>参数含义如下：</strong></p>
-</blockquote>
-<ul>
-<li><h4 id="ms1-file：一级数据的名字。"><a href="#ms1-file：一级数据的名字。" class="headerlink" title="ms1.file：一级数据的名字。"></a>ms1.file：一级数据的名字。</h4></li>
-<li><h4 id="polarity：数据采集极性，”positive”或者”negative”。"><a href="#polarity：数据采集极性，”positive”或者”negative”。" class="headerlink" title="polarity：数据采集极性，”positive”或者”negative”。"></a>polarity：数据采集极性，”positive”或者”negative”。</h4></li>
-<li><h4 id="column：使用的柱子类型，”hilic”或者”rp”。"><a href="#column：使用的柱子类型，”hilic”或者”rp”。" class="headerlink" title="column：使用的柱子类型，”hilic”或者”rp”。"></a>column：使用的柱子类型，”hilic”或者”rp”。</h4></li>
-<li><h4 id="ce：二级采集的碰撞能量，支持”10”，”15”，”20”，”25”，”30”，”35”，”35-15”-35±15-，”40”，-“45”，”50”，”55”，”60”，”65”，”70”。"><a href="#ce：二级采集的碰撞能量，支持”10”，”15”，”20”，”25”，”30”，”35”，”35-15”-35±15-，”40”，-“45”，”50”，”55”，”60”，”65”，”70”。" class="headerlink" title="ce：二级采集的碰撞能量，支持”10”，”15”，”20”，”25”，”30”，”35”，”35,15” (35±15)，”40”， “45”，”50”，”55”，”60”，”65”，”70”。"></a>ce：二级采集的碰撞能量，支持”10”，”15”，”20”，”25”，”30”，”35”，”35,15” (35±15)，”40”， “45”，”50”，”55”，”60”，”65”，”70”。</h4></li>
-<li><h4 id="prefer-adduct：使用那些加合物形式的注释用于RT预测模型的建立，默认使用所有的注释，推荐正离子模式下使用”M-H”，负离子模式下使用”M-H”。"><a href="#prefer-adduct：使用那些加合物形式的注释用于RT预测模型的建立，默认使用所有的注释，推荐正离子模式下使用”M-H”，负离子模式下使用”M-H”。" class="headerlink" title="prefer.adduct：使用那些加合物形式的注释用于RT预测模型的建立，默认使用所有的注释，推荐正离子模式下使用”M+H”，负离子模式下使用”M-H”。"></a>prefer.adduct：使用那些加合物形式的注释用于RT预测模型的建立，默认使用所有的注释，推荐正离子模式下使用”M+H”，负离子模式下使用”M-H”。</h4></li>
-<li><h4 id="use-default-md：进行保留时间预测模型建立时，是否使用默认的分子描述符，如果设置为FALSE，则会根据你的数据自动选择分子描述符。"><a href="#use-default-md：进行保留时间预测模型建立时，是否使用默认的分子描述符，如果设置为FALSE，则会根据你的数据自动选择分子描述符。" class="headerlink" title="use.default.md：进行保留时间预测模型建立时，是否使用默认的分子描述符，如果设置为FALSE，则会根据你的数据自动选择分子描述符。"></a>use.default.md：进行保留时间预测模型建立时，是否使用默认的分子描述符，如果设置为FALSE，则会根据你的数据自动选择分子描述符。</h4></li>
-<li><h4 id="threads：使用线程数，默认为3，可以根据电脑本身配置进行修改。"><a href="#threads：使用线程数，默认为3，可以根据电脑本身配置进行修改。" class="headerlink" title="threads：使用线程数，默认为3，可以根据电脑本身配置进行修改。"></a>threads：使用线程数，默认为3，可以根据电脑本身配置进行修改。</h4></li>
-<li><h4 id="group：要对哪些分组的样品进行分析，注意，计算fold-change时，使用后面的样品除以前面的样品。"><a href="#group：要对哪些分组的样品进行分析，注意，计算fold-change时，使用后面的样品除以前面的样品。" class="headerlink" title="group：要对哪些分组的样品进行分析，注意，计算fold change时，使用后面的样品除以前面的样品。"></a>group：要对哪些分组的样品进行分析，<strong>注意</strong>，计算fold change时，使用后面的样品除以前面的样品。</h4></li>
-<li><h4 id="uni-test：单变量分析的方法，”t”，Student-t-test；”wilcox”，Wilcox-test。"><a href="#uni-test：单变量分析的方法，”t”，Student-t-test；”wilcox”，Wilcox-test。" class="headerlink" title="uni.test：单变量分析的方法，”t”，Student t test；”wilcox”，Wilcox test。"></a>uni.test：单变量分析的方法，”t”，Student t test；”wilcox”，Wilcox test。</h4></li>
-<li><h4 id="correct：是否需要对p值进行FDR校正。"><a href="#correct：是否需要对p值进行FDR校正。" class="headerlink" title="correct：是否需要对p值进行FDR校正。"></a>correct：是否需要对p值进行FDR校正。</h4></li>
-<li><h4 id="p-cutoff：选择dysregulated-peak时的p值cutoff。"><a href="#p-cutoff：选择dysregulated-peak时的p值cutoff。" class="headerlink" title="p.cutoff：选择dysregulated peak时的p值cutoff。"></a>p.cutoff：选择dysregulated peak时的p值cutoff。</h4></li>
-<li><h4 id="species：所研究样品的物种来源，”dme”，果蝇；”hsa”，人类；”mmu”，小鼠；”rat”，大鼠，”bta”，牛；”gga”，Gallus-gallus-鸡-；”dre”，Danio-rerio-斑马鱼-；”cel”，Caenorharomyces-elegans-线虫-；”sce”，Saccharomyces-cerevisaiae-酵母-；-“ath”，Arabidopsis-thaliana-拟南芥-；”smm”，Schistosoma-mansoni；”pfa”，Plasmodum-falciparum-3D7；”tbr”，Trypanosoma-brucei；”eco”，-Escherichia-coli-K-12-MG1655-大肠杆菌-；”ppu”，Pseudomonas-putida-KT2440；”syf”，Synechococcus-elongatus。"><a href="#species：所研究样品的物种来源，”dme”，果蝇；”hsa”，人类；”mmu”，小鼠；”rat”，大鼠，”bta”，牛；”gga”，Gallus-gallus-鸡-；”dre”，Danio-rerio-斑马鱼-；”cel”，Caenorharomyces-elegans-线虫-；”sce”，Saccharomyces-cerevisaiae-酵母-；-“ath”，Arabidopsis-thaliana-拟南芥-；”smm”，Schistosoma-mansoni；”pfa”，Plasmodum-falciparum-3D7；”tbr”，Trypanosoma-brucei；”eco”，-Escherichia-coli-K-12-MG1655-大肠杆菌-；”ppu”，Pseudomonas-putida-KT2440；”syf”，Synechococcus-elongatus。" class="headerlink" title="species：所研究样品的物种来源，”dme”，果蝇；”hsa”，人类；”mmu”，小鼠；”rat”，大鼠，”bta”，牛；”gga”，Gallus gallus (鸡)；”dre”，Danio rerio (斑马鱼)；”cel”，Caenorharomyces elegans (线虫)；”sce”，Saccharomyces cerevisaiae (酵母)； “ath”，Arabidopsis thaliana (拟南芥)；”smm”，Schistosoma mansoni；”pfa”，Plasmodum falciparum 3D7；”tbr”，Trypanosoma brucei；”eco”， Escherichia coli K-12 MG1655(大肠杆菌)；”ppu”，Pseudomonas putida KT2440；”syf”，Synechococcus elongatus。"></a>species：所研究样品的物种来源，”dme”，果蝇；”hsa”，人类；”mmu”，小鼠；”rat”，大鼠，”bta”，牛；”gga”，Gallus gallus (鸡)；”dre”，Danio rerio (斑马鱼)；”cel”，Caenorharomyces elegans (线虫)；”sce”，Saccharomyces cerevisaiae (酵母)； “ath”，Arabidopsis thaliana (拟南芥)；”smm”，Schistosoma mansoni；”pfa”，Plasmodum falciparum 3D7；”tbr”，Trypanosoma brucei；”eco”， Escherichia coli K-12 MG1655(大肠杆菌)；”ppu”，Pseudomonas putida KT2440；”syf”，Synechococcus elongatus。</h4></li>
-</ul>
-<h3 id="2-对正负数据合并分析"><a href="#2-对正负数据合并分析" class="headerlink" title="2. 对正负数据合并分析"></a><strong>2. 对正负数据合并分析</strong></h3><h4 id="正负离子分别处理之后，可以使用函数metModule2函数合并正负离子模式的鉴定结果，进行dysregulated-network-analysis。"><a href="#正负离子分别处理之后，可以使用函数metModule2函数合并正负离子模式的鉴定结果，进行dysregulated-network-analysis。" class="headerlink" title="正负离子分别处理之后，可以使用函数metModule2函数合并正负离子模式的鉴定结果，进行dysregulated network analysis。"></a>正负离子分别处理之后，可以使用函数<em>metModule2</em>函数合并正负离子模式的鉴定结果，进行dysregulated network analysis。</h4><h4 id="运行函数MetModule2"><a href="#运行函数MetModule2" class="headerlink" title="运行函数MetModule2"></a>运行函数<em>MetModule2</em></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">metModule2(group = c(&quot;W03&quot;, &quot;W30&quot;),</div><div class="line">           uni.test = &quot;t&quot;,</div><div class="line">           column = &quot;hilic&quot;,</div><div class="line">           correct = TRUE,</div><div class="line">           p.cutoff = 0.01,</div><div class="line">           threads = 3,</div><div class="line">           species = &quot;dme&quot;)</div></pre></td></tr></table></figure>
-<blockquote>
-<p><strong>参数含义如下：</strong></p>
-</blockquote>
-<ul>
-<li><h4 id="group：要对哪些分组的样品进行分析，注意，计算fold-change时，使用后面的样品除以前面的样品。-1"><a href="#group：要对哪些分组的样品进行分析，注意，计算fold-change时，使用后面的样品除以前面的样品。-1" class="headerlink" title="group：要对哪些分组的样品进行分析，注意，计算fold change时，使用后面的样品除以前面的样品。"></a>group：要对哪些分组的样品进行分析，<strong>注意</strong>，计算fold change时，使用后面的样品除以前面的样品。</h4></li>
-<li><h4 id="uni-test：单变量分析的方法，”t”，Student-t-test；”wilcox”，Wilcox-test。-1"><a href="#uni-test：单变量分析的方法，”t”，Student-t-test；”wilcox”，Wilcox-test。-1" class="headerlink" title="uni.test：单变量分析的方法，”t”，Student t test；”wilcox”，Wilcox test。"></a>uni.test：单变量分析的方法，”t”，Student t test；”wilcox”，Wilcox test。</h4></li>
-<li><h4 id="column：使用的柱子类型，”hilic”或者”rp”。-1"><a href="#column：使用的柱子类型，”hilic”或者”rp”。-1" class="headerlink" title="column：使用的柱子类型，”hilic”或者”rp”。"></a>column：使用的柱子类型，”hilic”或者”rp”。</h4></li>
-<li><h4 id="correct：是否需要对p值进行FDR校正。-1"><a href="#correct：是否需要对p值进行FDR校正。-1" class="headerlink" title="correct：是否需要对p值进行FDR校正。"></a>correct：是否需要对p值进行FDR校正。</h4></li>
-<li><h4 id="p-cutoff：选择dysregulated-peak时的p值cutoff。-1"><a href="#p-cutoff：选择dysregulated-peak时的p值cutoff。-1" class="headerlink" title="p.cutoff：选择dysregulated peak时的p值cutoff。"></a>p.cutoff：选择dysregulated peak时的p值cutoff。</h4></li>
-<li><h4 id="threads：使用线程数，默认为3，可以根据电脑本身配置进行修改。-1"><a href="#threads：使用线程数，默认为3，可以根据电脑本身配置进行修改。-1" class="headerlink" title="threads：使用线程数，默认为3，可以根据电脑本身配置进行修改。"></a>threads：使用线程数，默认为3，可以根据电脑本身配置进行修改。</h4></li>
-<li><h4 id="species：所研究样品的物种来源，”dme”，果蝇；”hsa”，人类；”mmu”，小鼠；”rat”，大鼠，”bta”，牛；”gga”，Gallus-gallus-鸡-；”dre”，Danio-rerio-斑马鱼-；”cel”，Caenorharomyces-elegans-线虫-；”sce”，Saccharomyces-cerevisaiae-酵母-；-“ath”，Arabidopsis-thaliana-拟南芥-；”smm”，Schistosoma-mansoni；”pfa”，Plasmodum-falciparum-3D7；”tbr”，Trypanosoma-brucei；”eco”，-Escherichia-coli-K-12-MG1655-大肠杆菌-；”ppu”，Pseudomonas-putida-KT2440；”syf”，Synechococcus-elongatus。-1"><a href="#species：所研究样品的物种来源，”dme”，果蝇；”hsa”，人类；”mmu”，小鼠；”rat”，大鼠，”bta”，牛；”gga”，Gallus-gallus-鸡-；”dre”，Danio-rerio-斑马鱼-；”cel”，Caenorharomyces-elegans-线虫-；”sce”，Saccharomyces-cerevisaiae-酵母-；-“ath”，Arabidopsis-thaliana-拟南芥-；”smm”，Schistosoma-mansoni；”pfa”，Plasmodum-falciparum-3D7；”tbr”，Trypanosoma-brucei；”eco”，-Escherichia-coli-K-12-MG1655-大肠杆菌-；”ppu”，Pseudomonas-putida-KT2440；”syf”，Synechococcus-elongatus。-1" class="headerlink" title="species：所研究样品的物种来源，”dme”，果蝇；”hsa”，人类；”mmu”，小鼠；”rat”，大鼠，”bta”，牛；”gga”，Gallus gallus (鸡)；”dre”，Danio rerio (斑马鱼)；”cel”，Caenorharomyces elegans (线虫)；”sce”，Saccharomyces cerevisaiae (酵母)； “ath”，Arabidopsis thaliana (拟南芥)；”smm”，Schistosoma mansoni；”pfa”，Plasmodum falciparum 3D7；”tbr”，Trypanosoma brucei；”eco”， Escherichia coli K-12 MG1655(大肠杆菌)；”ppu”，Pseudomonas putida KT2440；”syf”，Synechococcus elongatus。"></a>species：所研究样品的物种来源，”dme”，果蝇；”hsa”，人类；”mmu”，小鼠；”rat”，大鼠，”bta”，牛；”gga”，Gallus gallus (鸡)；”dre”，Danio rerio (斑马鱼)；”cel”，Caenorharomyces elegans (线虫)；”sce”，Saccharomyces cerevisaiae (酵母)； “ath”，Arabidopsis thaliana (拟南芥)；”smm”，Schistosoma mansoni；”pfa”，Plasmodum falciparum 3D7；”tbr”，Trypanosoma brucei；”eco”， Escherichia coli K-12 MG1655(大肠杆菌)；”ppu”，Pseudomonas putida KT2440；”syf”，Synechococcus elongatus。</h4></li>
-</ul>
-<h4 id="运行函数analysisReport得到分析报告。"><a href="#运行函数analysisReport得到分析报告。" class="headerlink" title="运行函数analysisReport得到分析报告。"></a>运行函数<em>analysisReport</em>得到分析报告。</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">analysisReport(polarity = &quot;both&quot;)</div></pre></td></tr></table></figure>
-<hr>
-<h3 id="Ⅳ-运行结果"><a href="#Ⅳ-运行结果" class="headerlink" title="Ⅳ 运行结果"></a><strong>Ⅳ 运行结果</strong></h3><h3 id="1-正离子或者负离子的运行结果"><a href="#1-正离子或者负离子的运行结果" class="headerlink" title="1. 正离子或者负离子的运行结果"></a><strong>1. 正离子或者负离子的运行结果</strong></h3><h4 id="MetDNA函数运行结束之后，所有的运行结果都存放在设置的路径中，包含二级谱图匹配结果，MRN注释结果，dysregulated-network分析结果以及分析报告。如图5所示。"><a href="#MetDNA函数运行结束之后，所有的运行结果都存放在设置的路径中，包含二级谱图匹配结果，MRN注释结果，dysregulated-network分析结果以及分析报告。如图5所示。" class="headerlink" title="MetDNA函数运行结束之后，所有的运行结果都存放在设置的路径中，包含二级谱图匹配结果，MRN注释结果，dysregulated network分析结果以及分析报告。如图5所示。"></a><strong>MetDNA</strong>函数运行结束之后，所有的运行结果都存放在设置的路径中，包含二级谱图匹配结果，MRN注释结果，dysregulated network分析结果以及分析报告。如图5所示。</h4><p><img src="analysis.result.png" alt="**Figure 5: 运行结果**"></p>
-<h3 id="1-MetDNA-parameters-csv"><a href="#1-MetDNA-parameters-csv" class="headerlink" title="(1) MetDNA.parameters.csv"></a><strong>(1) MetDNA.parameters.csv</strong></h3><h4 id="记录此次运行所使用的参数。"><a href="#记录此次运行所使用的参数。" class="headerlink" title="记录此次运行所使用的参数。"></a>记录此次运行所使用的参数。</h4><p><img src="MetDNA.parameters.png" alt="**Figure 6: 参数记录**"></p>
-<h3 id="2-ms2-match-result-POS"><a href="#2-ms2-match-result-POS" class="headerlink" title="(2) ms2_match_result_POS"></a><strong>(2) ms2_match_result_POS</strong></h3><h4 id="二级谱图匹配结果。包括一个csv文件，ms2-match-annotation-result-csv和一个文件夹，MS2-match-spectra。ms2-macth-annotation-result-csv是二级谱图匹配之后的结果，与MetAnalyzer处理之后的结果相同；MS2-match-spectra文件夹中包含了所有二级匹配图-Figure-6-。"><a href="#二级谱图匹配结果。包括一个csv文件，ms2-match-annotation-result-csv和一个文件夹，MS2-match-spectra。ms2-macth-annotation-result-csv是二级谱图匹配之后的结果，与MetAnalyzer处理之后的结果相同；MS2-match-spectra文件夹中包含了所有二级匹配图-Figure-6-。" class="headerlink" title="二级谱图匹配结果。包括一个csv文件，ms2.match.annotation.result.csv和一个文件夹，MS2_match_spectra。ms2.macth.annotation.result.csv是二级谱图匹配之后的结果，与MetAnalyzer处理之后的结果相同；MS2_match_spectra文件夹中包含了所有二级匹配图(Figure 6)。"></a>二级谱图匹配结果。包括一个csv文件，ms2.match.annotation.result.csv和一个文件夹，MS2_match_spectra。ms2.macth.annotation.result.csv是二级谱图匹配之后的结果，与MetAnalyzer处理之后的结果相同；MS2_match_spectra文件夹中包含了所有二级匹配图(Figure 6)。</h4><p><img src="二级匹配图.png" alt="**Figure 7: 二级谱图匹配图**"></p>
-<h3 id="3-MRN-annotation-result-POS"><a href="#3-MRN-annotation-result-POS" class="headerlink" title="(3) MRN_annotation_result_POS"></a><strong>(3) MRN_annotation_result_POS</strong></h3><h4 id="基于metabolic-reacion-network注释结果。包括两个csv文件，metABM-parameters-csv和MRN-annotation-result-csv。MRN-annotation-result-csv是使用MRN注释结果-Figure-8-。"><a href="#基于metabolic-reacion-network注释结果。包括两个csv文件，metABM-parameters-csv和MRN-annotation-result-csv。MRN-annotation-result-csv是使用MRN注释结果-Figure-8-。" class="headerlink" title="基于metabolic reacion network注释结果。包括两个csv文件，metABM.parameters.csv和MRN.annotation.result.csv。MRN.annotation.result.csv是使用MRN注释结果(Figure 8)。"></a>基于metabolic reacion network注释结果。包括两个csv文件，metABM.parameters.csv和MRN.annotation.result.csv。MRN.annotation.result.csv是使用MRN注释结果(Figure 8)。</h4><p><img src="MRN.annotation.result.png" alt="**Figure 8: MRN annotation result**"></p>
-<h4 id="其中："><a href="#其中：" class="headerlink" title="其中："></a>其中：</h4><ul>
-<li><h4 id="annotation-from-ID：该peak的该注释来自于哪个metabolite-ID"><a href="#annotation-from-ID：该peak的该注释来自于哪个metabolite-ID" class="headerlink" title="annotation.from.ID：该peak的该注释来自于哪个metabolite(ID);"></a>annotation.from.ID：该peak的该注释来自于哪个metabolite(ID);</h4></li>
-<li><h4 id="annotation-from-peak：该peak的该注释来自于哪个peak"><a href="#annotation-from-peak：该peak的该注释来自于哪个peak" class="headerlink" title="annotation.from.peak：该peak的该注释来自于哪个peak;"></a>annotation.from.peak：该peak的该注释来自于哪个peak;</h4></li>
-<li><h4 id="ID：注释代谢物结果的KEGG-ID"><a href="#ID：注释代谢物结果的KEGG-ID" class="headerlink" title="ID：注释代谢物结果的KEGG ID;"></a>ID：注释代谢物结果的KEGG ID;</h4></li>
-<li><h4 id="compound-name：注释结果的名字；"><a href="#compound-name：注释结果的名字；" class="headerlink" title="compound.name：注释结果的名字；"></a>compound.name：注释结果的名字；</h4></li>
-<li><h4 id="isotope：同位素信息；"><a href="#isotope：同位素信息；" class="headerlink" title="isotope：同位素信息；"></a>isotope：同位素信息；</h4></li>
-<li><h4 id="adduct：加合物信息；"><a href="#adduct：加合物信息；" class="headerlink" title="adduct：加合物信息；"></a>adduct：加合物信息；</h4></li>
-<li><h4 id="Formula：化学结构式；"><a href="#Formula：化学结构式；" class="headerlink" title="Formula：化学结构式；"></a>Formula：化学结构式；</h4></li>
-<li><h4 id="score：注释打分；"><a href="#score：注释打分；" class="headerlink" title="score：注释打分；"></a>score：注释打分；</h4></li>
-<li><h4 id="peak-group：peak-group；"><a href="#peak-group：peak-group；" class="headerlink" title="peak.group：peak group；"></a>peak.group：peak group；</h4></li>
-<li><h4 id="confidence：对注释的peak-group打分。"><a href="#confidence：对注释的peak-group打分。" class="headerlink" title="confidence：对注释的peak group打分。"></a>confidence：对注释的peak group打分。</h4></li>
-</ul>
-<h3 id="4-Dysregulated-network-analsysi-result-POS"><a href="#4-Dysregulated-network-analsysi-result-POS" class="headerlink" title="(4) Dysregulated_network_analsysi_result_POS"></a><strong>(4) Dysregulated_network_analsysi_result_POS</strong></h3><h4 id="Dysregulated-network分析的结果。其中包括一个pdf文件，volcano-plot-pdf-Figure-9-，两个csv文件，metModule-parameters-csv和DNA-annotation-result-csv以及两个文件夹，module-information-Figure-10-和pathway-inforamtion-Figure-11-。"><a href="#Dysregulated-network分析的结果。其中包括一个pdf文件，volcano-plot-pdf-Figure-9-，两个csv文件，metModule-parameters-csv和DNA-annotation-result-csv以及两个文件夹，module-information-Figure-10-和pathway-inforamtion-Figure-11-。" class="headerlink" title="Dysregulated network分析的结果。其中包括一个pdf文件，volcano.plot.pdf(Figure: 9)，两个csv文件，metModule.parameters.csv和DNA.annotation.result.csv以及两个文件夹，module_information(Figure 10)和pathway_inforamtion (Figure 11)。"></a>Dysregulated network分析的结果。其中包括一个pdf文件，volcano.plot.pdf(Figure: 9)，两个csv文件，metModule.parameters.csv和DNA.annotation.result.csv以及两个文件夹，module_information(Figure 10)和pathway_inforamtion (Figure 11)。</h4><h4 id="1-volcano-plot是选取差异代谢物峰的火山图。"><a href="#1-volcano-plot是选取差异代谢物峰的火山图。" class="headerlink" title="1) volcano.plot是选取差异代谢物峰的火山图。"></a>1) volcano.plot是选取差异代谢物峰的火山图。</h4><p><img src="volcano.plot.png" alt="**Figure 9: Volcano plot**"></p>
-<h4 id="2-DNA-annotation-result-csv是通过dysregulated-network对注释结果进行筛选以及KEGG-database注释之后的注释结果。"><a href="#2-DNA-annotation-result-csv是通过dysregulated-network对注释结果进行筛选以及KEGG-database注释之后的注释结果。" class="headerlink" title="2) DNA.annotation.result.csv是通过dysregulated network对注释结果进行筛选以及KEGG database注释之后的注释结果。"></a>2) DNA.annotation.result.csv是通过dysregulated network对注释结果进行筛选以及KEGG database注释之后的注释结果。</h4><h4 id="3-module-information文件夹中包含了dysregulated-module的分析结果。其中module-result-csv是module的信息。module-overview-pdf是module结果的总览-Figure-10-。module-heatmap-pdf是对module进行定量分析之后的热图-Figure-11-。boxplot文件夹中包含了module在两组间的定量结果-Figure-12-。Module-MSE-analysis文件夹中包含了对每个module进行功能注释-MSEA-的结果-Figure-13-。"><a href="#3-module-information文件夹中包含了dysregulated-module的分析结果。其中module-result-csv是module的信息。module-overview-pdf是module结果的总览-Figure-10-。module-heatmap-pdf是对module进行定量分析之后的热图-Figure-11-。boxplot文件夹中包含了module在两组间的定量结果-Figure-12-。Module-MSE-analysis文件夹中包含了对每个module进行功能注释-MSEA-的结果-Figure-13-。" class="headerlink" title="3) module_information文件夹中包含了dysregulated module的分析结果。其中module.result.csv是module的信息。module.overview.pdf是module结果的总览(Figure 10)。module.heatmap.pdf是对module进行定量分析之后的热图(Figure 11)。boxplot文件夹中包含了module在两组间的定量结果(Figure 12)。Module_MSE analysis文件夹中包含了对每个module进行功能注释(MSEA)的结果(Figure 13)。"></a>3) module_information文件夹中包含了dysregulated module的分析结果。其中module.result.csv是module的信息。module.overview.pdf是module结果的总览(Figure 10)。module.heatmap.pdf是对module进行定量分析之后的热图(Figure 11)。boxplot文件夹中包含了module在两组间的定量结果(Figure 12)。Module_MSE analysis文件夹中包含了对每个module进行功能注释(MSEA)的结果(Figure 13)。</h4><p><img src="module.overview.png" alt="**Figure 10: Module overview**"></p>
-<p><img src="module.heatmap.png" alt="**Figure 11: Module heatmap**"></p>
-<p><img src="module1.boxplot.png" alt="**Figure 12: Module boxplot**"></p>
-<p><img src="module1.MSEA.png" alt="**Figure 13: Module MSEA result**"></p>
-<h4 id="3-pathway-information文件夹中包含了pathway的分析结果-Figure-14-。"><a href="#3-pathway-information文件夹中包含了pathway的分析结果-Figure-14-。" class="headerlink" title="3) pathway_information文件夹中包含了pathway的分析结果(Figure 14)。"></a>3) pathway_information文件夹中包含了pathway的分析结果(Figure 14)。</h4><p><img src="pathway.information.png" alt="**Figure 14: Pathway information**"></p>
-<h4 id="其中：-1"><a href="#其中：-1" class="headerlink" title="其中："></a>其中：</h4><ul>
-<li><h4 id="boxplot：该文件夹中含有每个pathway的定量信息"><a href="#boxplot：该文件夹中含有每个pathway的定量信息" class="headerlink" title="boxplot：该文件夹中含有每个pathway的定量信息;"></a>boxplot：该文件夹中含有每个pathway的定量信息;</h4></li>
-<li><h4 id="dysregulated-network-overview：该图表示dysregulated-network的pathway分析结果"><a href="#dysregulated-network-overview：该图表示dysregulated-network的pathway分析结果" class="headerlink" title="dysregulated.network.overview：该图表示dysregulated network的pathway分析结果;"></a>dysregulated.network.overview：该图表示dysregulated network的pathway分析结果;</h4></li>
-<li><h4 id="dysregulated-netwrok-MSEA-csv：dysregulated-network的MSEA分析结果"><a href="#dysregulated-netwrok-MSEA-csv：dysregulated-network的MSEA分析结果" class="headerlink" title="dysregulated.netwrok.MSEA.csv：dysregulated network的MSEA分析结果;"></a>dysregulated.netwrok.MSEA.csv：dysregulated network的MSEA分析结果;</h4></li>
-<li><h4 id="dysregulated-netwrok-MSEA-pdf：dysregulated-network的MSEA分析结果"><a href="#dysregulated-netwrok-MSEA-pdf：dysregulated-network的MSEA分析结果" class="headerlink" title="dysregulated.netwrok.MSEA.pdf：dysregulated network的MSEA分析结果;"></a>dysregulated.netwrok.MSEA.pdf：dysregulated network的MSEA分析结果;</h4></li>
-<li><h4 id="dysregulated-networks-for-cytoscape-txt：用于cytoscape作图的数据；"><a href="#dysregulated-networks-for-cytoscape-txt：用于cytoscape作图的数据；" class="headerlink" title="dysregulated.networks.for.cytoscape.txt：用于cytoscape作图的数据；"></a>dysregulated.networks.for.cytoscape.txt：用于cytoscape作图的数据；</h4></li>
-<li><h4 id="dysregulated-networks-attribute-txt：用于cytoscape作图的节点属性数据；"><a href="#dysregulated-networks-attribute-txt：用于cytoscape作图的节点属性数据；" class="headerlink" title="dysregulated.networks.attribute.txt：用于cytoscape作图的节点属性数据；"></a>dysregulated.networks.attribute.txt：用于cytoscape作图的节点属性数据；</h4></li>
-<li><h4 id="pathway-heatmap-pdf：dysregulated-network的pathway定量的heatmap。"><a href="#pathway-heatmap-pdf：dysregulated-network的pathway定量的heatmap。" class="headerlink" title="pathway.heatmap.pdf：dysregulated network的pathway定量的heatmap。"></a>pathway.heatmap.pdf：dysregulated network的pathway定量的heatmap。</h4></li>
-</ul>
-<h3 id="5-Analysis-report-POS"><a href="#5-Analysis-report-POS" class="headerlink" title="(5) Analysis_report_POS"></a><strong>(5) Analysis_report_POS</strong></h3><h4 id="对数据处理分析结果的总结。输出的结果存放在Analysis-report文件夹内。包括一份html格式的分析报告。"><a href="#对数据处理分析结果的总结。输出的结果存放在Analysis-report文件夹内。包括一份html格式的分析报告。" class="headerlink" title="对数据处理分析结果的总结。输出的结果存放在Analysis_report文件夹内。包括一份html格式的分析报告。"></a>对数据处理分析结果的总结。输出的结果存放在Analysis_report文件夹内。包括一份html格式的<a href="http://rpubs.com/Jasper/metdna_analysis_report" target="_blank" rel="external">分析报告</a>。</h4>
-          
+          MetDNA需要准备的数据包括一级数据peak table(csv格式)，二级数据(mgf格式)和样品信息sample.info(csv格式)。点击下载[正离子demo数据](https://github.com/jaspershen/MetDNA/blob/master/pos.rar)和[负离子demo数据](https://github.com/jaspershen/MetDNA/blob/master/neg.rar)。
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/09/14/2017-09-09-metdna-blog/">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1425,8 +766,8 @@ sudo gem sources -a http://ruby.taobao.org/
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">5</span>
-                <span class="site-state-item-name">Artikel</span>
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">posts</span>
               </a>
             </div>
           
@@ -1437,7 +778,7 @@ sudo gem sources -a http://ruby.taobao.org/
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
                 <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">Kategorien</span>
+                <span class="site-state-item-name">categories</span>
               </a>
             </div>
           
@@ -1448,7 +789,7 @@ sudo gem sources -a http://ruby.taobao.org/
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
                 <span class="site-state-item-count">5</span>
-                <span class="site-state-item-name">Tags</span>
+                <span class="site-state-item-name">tags</span>
               </a>
             </div>
           
@@ -1513,7 +854,7 @@ sudo gem sources -a http://ruby.taobao.org/
 </div>
 
 
-  <div class="powered-by">Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a class="theme-link" href="https://hexo.io">Hexo</a></div>
 
   <span class="post-meta-divider">|</span>
 
